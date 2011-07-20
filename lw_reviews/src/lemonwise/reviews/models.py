@@ -76,7 +76,8 @@ class ReviewWidget(AuditModel):
     widget_id = models.IntegerField()
     widget = generic.GenericForeignKey(ct_field='widget_type',
         fk_field='widget_id')
-    value = models.TextField()
+#    value = models.TextField()
+    value = models.IntegerField()
 
     objects = ReviewWidgetManager()
 

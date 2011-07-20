@@ -232,7 +232,7 @@
             "review": 1, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "1", 
+            "value": 1,
             "date_created": "2011-07-07 16:21:55", 
             "widget_id": 1
         }
@@ -246,7 +246,7 @@
             "review": 1, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "1", 
+            "value": 1,
             "date_created": "2011-07-07 16:22:06", 
             "widget_id": 2
         }
@@ -260,7 +260,7 @@
             "review": 1, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "1", 
+            "value": 1,
             "date_created": "2011-07-07 16:22:17", 
             "widget_id": 3
         }
@@ -274,7 +274,7 @@
             "review": 1, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "1", 
+            "value": 1,
             "date_created": "2011-07-07 16:22:28", 
             "widget_id": 4
         }
@@ -288,7 +288,7 @@
             "review": 1, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "1", 
+            "value": 1,
             "date_created": "2011-07-07 16:22:41", 
             "widget_id": 5
         }
@@ -302,7 +302,7 @@
             "review": 1, 
             "created_by": null, 
             "widget_type": 24, 
-            "value": "0", 
+            "value": 0,
             "date_created": "2011-07-07 16:22:53", 
             "widget_id": 1
         }
@@ -316,7 +316,7 @@
             "review": 1, 
             "created_by": null, 
             "widget_type": 24, 
-            "value": "0", 
+            "value": 0,
             "date_created": "2011-07-07 16:23:14", 
             "widget_id": 2
         }
@@ -330,7 +330,7 @@
             "review": 1, 
             "created_by": null, 
             "widget_type": 24, 
-            "value": "-50", 
+            "value": -50,
             "date_created": "2011-07-07 16:23:34", 
             "widget_id": 3
         }
@@ -344,7 +344,7 @@
             "review": 1, 
             "created_by": null, 
             "widget_type": 24, 
-            "value": "50", 
+            "value": 50,
             "date_created": "2011-07-07 16:23:49", 
             "widget_id": 4
         }
@@ -358,7 +358,7 @@
             "review": 1, 
             "created_by": null, 
             "widget_type": 26, 
-            "value": "oval", 
+            "value": 1,
             "date_created": "2011-07-07 16:24:24", 
             "widget_id": 1
         }
@@ -372,7 +372,7 @@
             "review": 1, 
             "created_by": null, 
             "widget_type": 26, 
-            "value": "all", 
+            "value": 1,
             "date_created": "2011-07-07 16:24:46", 
             "widget_id": 2
         }
@@ -386,7 +386,7 @@
             "review": 2, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "1", 
+            "value": 1,
             "date_created": "2011-07-07 16:40:46", 
             "widget_id": 1
         }
@@ -400,7 +400,7 @@
             "review": 2, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "1", 
+            "value": 1,
             "date_created": "2011-07-07 16:40:57", 
             "widget_id": 2
         }
@@ -414,7 +414,7 @@
             "review": 2, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "1", 
+            "value": 1,
             "date_created": "2011-07-07 16:41:08", 
             "widget_id": 3
         }
@@ -428,7 +428,7 @@
             "review": 2, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "0", 
+            "value": 0,
             "date_created": "2011-07-07 16:41:21", 
             "widget_id": 4
         }
@@ -442,7 +442,7 @@
             "review": 2, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "1", 
+            "value": 1,
             "date_created": "2011-07-07 16:41:31", 
             "widget_id": 5
         }
@@ -456,7 +456,7 @@
             "review": 2, 
             "created_by": null, 
             "widget_type": 24, 
-            "value": "0", 
+            "value": 0,
             "date_created": "2011-07-07 16:41:47", 
             "widget_id": 1
         }
@@ -470,7 +470,7 @@
             "review": 2, 
             "created_by": null, 
             "widget_type": 24, 
-            "value": "0", 
+            "value": 0,
             "date_created": "2011-07-07 16:42:01", 
             "widget_id": 2
         }
@@ -484,7 +484,7 @@
             "review": 2, 
             "created_by": null, 
             "widget_type": 24, 
-            "value": "50", 
+            "value": 50,
             "date_created": "2011-07-07 16:42:11", 
             "widget_id": 3
         }
@@ -498,7 +498,7 @@
             "review": 2, 
             "created_by": null, 
             "widget_type": 24, 
-            "value": "0", 
+            "value": 0,
             "date_created": "2011-07-07 16:42:22", 
             "widget_id": 4
         }
@@ -512,7 +512,7 @@
             "review": 2, 
             "created_by": null, 
             "widget_type": 26, 
-            "value": "round", 
+            "value": 1,
             "date_created": "2011-07-07 16:42:41", 
             "widget_id": 1
         }
@@ -526,7 +526,7 @@
             "review": 2, 
             "created_by": null, 
             "widget_type": 26, 
-            "value": "work", 
+            "value": 1,
             "date_created": "2011-07-07 16:42:53", 
             "widget_id": 2
         }
@@ -540,7 +540,7 @@
             "review": 3, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "1", 
+            "value": 1,
             "date_created": "2011-07-12 11:33:43", 
             "widget_id": 1
         }
@@ -554,7 +554,7 @@
             "review": 3, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "1", 
+            "value": 1,
             "date_created": "2011-07-12 11:34:38", 
             "widget_id": 2
         }
@@ -568,7 +568,7 @@
             "review": 3, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "1", 
+            "value": 1,
             "date_created": "2011-07-12 11:34:58", 
             "widget_id": 3
         }
@@ -582,7 +582,7 @@
             "review": 3, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "1", 
+            "value": 1,
             "date_created": "2011-07-12 11:35:09", 
             "widget_id": 4
         }
@@ -596,7 +596,7 @@
             "review": 3, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "1", 
+            "value": 1,
             "date_created": "2011-07-12 11:35:26", 
             "widget_id": 5
         }
@@ -610,7 +610,7 @@
             "review": 3, 
             "created_by": null, 
             "widget_type": 24, 
-            "value": "0", 
+            "value": 0,
             "date_created": "2011-07-12 11:36:08", 
             "widget_id": 1
         }
@@ -624,7 +624,7 @@
             "review": 3, 
             "created_by": null, 
             "widget_type": 24, 
-            "value": "0", 
+            "value": 0,
             "date_created": "2011-07-12 11:36:19", 
             "widget_id": 2
         }
@@ -638,7 +638,7 @@
             "review": 3, 
             "created_by": null, 
             "widget_type": 26, 
-            "value": "round", 
+            "value": 1,
             "date_created": "2011-07-12 11:37:15", 
             "widget_id": 1
         }
@@ -652,7 +652,7 @@
             "review": 3, 
             "created_by": null, 
             "widget_type": 26, 
-            "value": "all", 
+            "value": 1,
             "date_created": "2011-07-12 11:37:56", 
             "widget_id": 2
         }
@@ -666,7 +666,7 @@
             "review": 3, 
             "created_by": null, 
             "widget_type": 24, 
-            "value": "0", 
+            "value": 0,
             "date_created": "2011-07-12 11:41:16", 
             "widget_id": 3
         }
@@ -680,7 +680,7 @@
             "review": 3, 
             "created_by": null, 
             "widget_type": 24, 
-            "value": "100", 
+            "value": 100,
             "date_created": "2011-07-12 11:41:27", 
             "widget_id": 4
         }
@@ -694,7 +694,7 @@
             "review": 4, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "1", 
+            "value":1,
             "date_created": "2011-07-13 17:56:53", 
             "widget_id": 6
         }
@@ -708,7 +708,7 @@
             "review": 4, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "1", 
+            "value": 1,
             "date_created": "2011-07-13 17:58:12", 
             "widget_id": 7
         }
@@ -722,7 +722,7 @@
             "review": 4, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "1", 
+            "value": 1,
             "date_created": "2011-07-13 17:58:25", 
             "widget_id": 8
         }
@@ -736,7 +736,7 @@
             "review": 4, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "1", 
+            "value": 1,
             "date_created": "2011-07-13 17:58:47", 
             "widget_id": 9
         }
@@ -750,7 +750,7 @@
             "review": 4, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "1", 
+            "value": 1,
             "date_created": "2011-07-13 17:59:37", 
             "widget_id": 13
         }
@@ -764,7 +764,7 @@
             "review": 4, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "1", 
+            "value": 1,
             "date_created": "2011-07-13 17:59:57", 
             "widget_id": 14
         }
@@ -778,7 +778,7 @@
             "review": 4, 
             "created_by": null, 
             "widget_type": 24, 
-            "value": "0", 
+            "value": 0,
             "date_created": "2011-07-13 18:04:14", 
             "widget_id": 5
         }
@@ -792,7 +792,7 @@
             "review": 4, 
             "created_by": null, 
             "widget_type": 24, 
-            "value": "0", 
+            "value": 0,
             "date_created": "2011-07-13 18:04:29", 
             "widget_id": 6
         }
@@ -806,7 +806,7 @@
             "review": 4, 
             "created_by": null, 
             "widget_type": 24, 
-            "value": "0", 
+            "value": 0,
             "date_created": "2011-07-13 18:04:42", 
             "widget_id": 7
         }
@@ -820,7 +820,7 @@
             "review": 4, 
             "created_by": null, 
             "widget_type": 26, 
-            "value": "myself", 
+            "value": 1,
             "date_created": "2011-07-13 18:06:10", 
             "widget_id": 3
         }
@@ -834,7 +834,7 @@
             "review": 4, 
             "created_by": null, 
             "widget_type": 26, 
-            "value": "special gift", 
+            "value": 1,
             "date_created": "2011-07-13 18:15:42", 
             "widget_id": 4
         }
@@ -848,7 +848,7 @@
             "review": 4, 
             "created_by": null, 
             "widget_type": 26, 
-            "value": "wear alone", 
+            "value": 1,
             "date_created": "2011-07-13 18:16:20", 
             "widget_id": 5
         }
@@ -862,7 +862,7 @@
             "review": 9, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "1", 
+            "value":1,
             "date_created": "2011-07-13 19:18:55", 
             "widget_id": 9
         }
@@ -876,7 +876,7 @@
             "review": 9, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "1", 
+            "value": 1,
             "date_created": "2011-07-13 19:18:55", 
             "widget_id": 6
         }
@@ -890,7 +890,7 @@
             "review": 9, 
             "created_by": null, 
             "widget_type": 24, 
-            "value": "0", 
+            "value": 0,
             "date_created": "2011-07-13 19:18:55", 
             "widget_id": 7
         }
@@ -904,7 +904,7 @@
             "review": 9, 
             "created_by": null, 
             "widget_type": 26, 
-            "value": "daughter", 
+            "value": 1,
             "date_created": "2011-07-13 19:18:55", 
             "widget_id": 3
         }
@@ -918,7 +918,7 @@
             "review": 9, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "1", 
+            "value": 1,
             "date_created": "2011-07-13 19:18:55", 
             "widget_id": 13
         }
@@ -932,7 +932,7 @@
             "review": 9, 
             "created_by": null, 
             "widget_type": 24, 
-            "value": "-100", 
+            "value": -100, 
             "date_created": "2011-07-13 19:18:55", 
             "widget_id": 6
         }
@@ -946,7 +946,7 @@
             "review": 9, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "0", 
+            "value": 0, 
             "date_created": "2011-07-13 19:18:55", 
             "widget_id": 8
         }
@@ -960,7 +960,7 @@
             "review": 9, 
             "created_by": null, 
             "widget_type": 26, 
-            "value": "stack", 
+            "value": 1, 
             "date_created": "2011-07-13 19:18:55", 
             "widget_id": 5
         }
@@ -974,7 +974,7 @@
             "review": 9, 
             "created_by": null, 
             "widget_type": 26, 
-            "value": "special gift", 
+            "value": 1, 
             "date_created": "2011-07-13 19:18:55", 
             "widget_id": 4
         }
@@ -988,7 +988,7 @@
             "review": 9, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "1", 
+            "value": 1, 
             "date_created": "2011-07-13 19:18:55", 
             "widget_id": 7
         }
@@ -1002,7 +1002,7 @@
             "review": 9, 
             "created_by": null, 
             "widget_type": 24, 
-            "value": "-100", 
+            "value": -100, 
             "date_created": "2011-07-13 19:18:55", 
             "widget_id": 5
         }
@@ -1016,7 +1016,7 @@
             "review": 10, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "1", 
+            "value": 1, 
             "date_created": "2011-07-13 19:24:24", 
             "widget_id": 9
         }
@@ -1030,7 +1030,7 @@
             "review": 10, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "1", 
+            "value": 1, 
             "date_created": "2011-07-13 19:24:24", 
             "widget_id": 6
         }
@@ -1044,7 +1044,7 @@
             "review": 10, 
             "created_by": null, 
             "widget_type": 24, 
-            "value": "0", 
+            "value": 0, 
             "date_created": "2011-07-13 19:24:24", 
             "widget_id": 7
         }
@@ -1058,7 +1058,7 @@
             "review": 10, 
             "created_by": null, 
             "widget_type": 26, 
-            "value": "Wife", 
+            "value": 1, 
             "date_created": "2011-07-13 19:24:24", 
             "widget_id": 3
         }
@@ -1072,7 +1072,7 @@
             "review": 10, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "1", 
+            "value": 1, 
             "date_created": "2011-07-13 19:24:24", 
             "widget_id": 13
         }
@@ -1086,7 +1086,7 @@
             "review": 10, 
             "created_by": null, 
             "widget_type": 24, 
-            "value": "0", 
+            "value": 0, 
             "date_created": "2011-07-13 19:24:24", 
             "widget_id": 6
         }
@@ -1100,7 +1100,7 @@
             "review": 10, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "1", 
+            "value": 1, 
             "date_created": "2011-07-13 19:24:24", 
             "widget_id": 14
         }
@@ -1114,7 +1114,7 @@
             "review": 10, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "1", 
+            "value": 1, 
             "date_created": "2011-07-13 19:24:24", 
             "widget_id": 8
         }
@@ -1128,7 +1128,7 @@
             "review": 10, 
             "created_by": null, 
             "widget_type": 26, 
-            "value": "wear alone", 
+            "value": 1, 
             "date_created": "2011-07-13 19:24:24", 
             "widget_id": 5
         }
@@ -1142,7 +1142,7 @@
             "review": 10, 
             "created_by": null, 
             "widget_type": 26, 
-            "value": "Anniversary", 
+            "value": 1, 
             "date_created": "2011-07-13 19:24:24", 
             "widget_id": 4
         }
@@ -1156,7 +1156,7 @@
             "review": 10, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "1", 
+            "value": 1, 
             "date_created": "2011-07-13 19:24:24", 
             "widget_id": 7
         }
@@ -1170,7 +1170,7 @@
             "review": 10, 
             "created_by": null, 
             "widget_type": 24, 
-            "value": "0", 
+            "value": 0, 
             "date_created": "2011-07-13 19:24:24", 
             "widget_id": 5
         }
@@ -1184,7 +1184,7 @@
             "review": 11, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "1", 
+            "value": 1, 
             "date_created": "2011-07-13 19:26:26", 
             "widget_id": 9
         }
@@ -1198,7 +1198,7 @@
             "review": 11, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "1", 
+            "value": 1, 
             "date_created": "2011-07-13 19:26:26", 
             "widget_id": 6
         }
@@ -1212,7 +1212,7 @@
             "review": 11, 
             "created_by": null, 
             "widget_type": 24, 
-            "value": "0", 
+            "value": 0, 
             "date_created": "2011-07-13 19:26:26", 
             "widget_id": 7
         }
@@ -1226,7 +1226,7 @@
             "review": 11, 
             "created_by": null, 
             "widget_type": 26, 
-            "value": "girlfriend", 
+            "value": 1, 
             "date_created": "2011-07-13 19:26:26", 
             "widget_id": 3
         }
@@ -1240,7 +1240,7 @@
             "review": 11, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "0", 
+            "value":0, 
             "date_created": "2011-07-13 19:26:26", 
             "widget_id": 13
         }
@@ -1254,7 +1254,7 @@
             "review": 11, 
             "created_by": null, 
             "widget_type": 24, 
-            "value": "0", 
+            "value": 0, 
             "date_created": "2011-07-13 19:26:26", 
             "widget_id": 6
         }
@@ -1268,7 +1268,7 @@
             "review": 11, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "1", 
+            "value": 1, 
             "date_created": "2011-07-13 19:26:26", 
             "widget_id": 8
         }
@@ -1282,7 +1282,7 @@
             "review": 11, 
             "created_by": null, 
             "widget_type": 26, 
-            "value": "wear alone", 
+            "value": 1, 
             "date_created": "2011-07-13 19:26:26", 
             "widget_id": 5
         }
@@ -1296,7 +1296,7 @@
             "review": 11, 
             "created_by": null, 
             "widget_type": 26, 
-            "value": "special gift", 
+            "value": 1, 
             "date_created": "2011-07-13 19:26:26", 
             "widget_id": 4
         }
@@ -1310,7 +1310,7 @@
             "review": 11, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "1", 
+            "value": 1, 
             "date_created": "2011-07-13 19:26:26", 
             "widget_id": 7
         }
@@ -1324,7 +1324,7 @@
             "review": 11, 
             "created_by": null, 
             "widget_type": 24, 
-            "value": "0", 
+            "value": 0, 
             "date_created": "2011-07-13 19:26:26", 
             "widget_id": 5
         }
@@ -1338,7 +1338,7 @@
             "review": 12, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "1", 
+            "value": 1, 
             "date_created": "2011-07-13 19:31:53", 
             "widget_id": 9
         }
@@ -1352,7 +1352,7 @@
             "review": 12, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "1", 
+            "value": 1, 
             "date_created": "2011-07-13 19:31:53", 
             "widget_id": 6
         }
@@ -1366,7 +1366,7 @@
             "review": 12, 
             "created_by": null, 
             "widget_type": 24, 
-            "value": "0", 
+            "value": 0, 
             "date_created": "2011-07-13 19:31:53", 
             "widget_id": 7
         }
@@ -1380,7 +1380,7 @@
             "review": 12, 
             "created_by": null, 
             "widget_type": 26, 
-            "value": "myself", 
+            "value": 1,
             "date_created": "2011-07-13 19:31:53", 
             "widget_id": 3
         }
@@ -1394,7 +1394,7 @@
             "review": 12, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "0", 
+            "value": 0, 
             "date_created": "2011-07-13 19:31:53", 
             "widget_id": 13
         }
@@ -1408,7 +1408,7 @@
             "review": 12, 
             "created_by": null, 
             "widget_type": 24, 
-            "value": "0", 
+            "value": 0, 
             "date_created": "2011-07-13 19:31:53", 
             "widget_id": 6
         }
@@ -1422,7 +1422,7 @@
             "review": 12, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "1", 
+            "value": 1, 
             "date_created": "2011-07-13 19:31:53", 
             "widget_id": 8
         }
@@ -1436,7 +1436,7 @@
             "review": 12, 
             "created_by": null, 
             "widget_type": 26, 
-            "value": "wear alone", 
+            "value": 1,
             "date_created": "2011-07-13 19:31:53", 
             "widget_id": 5
         }
@@ -1450,7 +1450,7 @@
             "review": 12, 
             "created_by": null, 
             "widget_type": 26, 
-            "value": "engagement", 
+            "value": 1,
             "date_created": "2011-07-13 19:31:53", 
             "widget_id": 4
         }
@@ -1464,7 +1464,7 @@
             "review": 12, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "1", 
+            "value": 1, 
             "date_created": "2011-07-13 19:31:53", 
             "widget_id": 7
         }
@@ -1478,7 +1478,7 @@
             "review": 12, 
             "created_by": null, 
             "widget_type": 24, 
-            "value": "0", 
+            "value": 0, 
             "date_created": "2011-07-13 19:31:53", 
             "widget_id": 5
         }
@@ -1492,7 +1492,7 @@
             "review": 13, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "1", 
+            "value": 1, 
             "date_created": "2011-07-13 19:41:17", 
             "widget_id": 9
         }
@@ -1506,7 +1506,7 @@
             "review": 13, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "1", 
+            "value": 1, 
             "date_created": "2011-07-13 19:41:17", 
             "widget_id": 6
         }
@@ -1520,7 +1520,7 @@
             "review": 13, 
             "created_by": null, 
             "widget_type": 24, 
-            "value": "0", 
+            "value": 0, 
             "date_created": "2011-07-13 19:41:17", 
             "widget_id": 7
         }
@@ -1534,7 +1534,7 @@
             "review": 13, 
             "created_by": null, 
             "widget_type": 26, 
-            "value": "girlfriend", 
+            "value": 1,
             "date_created": "2011-07-13 19:41:17", 
             "widget_id": 3
         }
@@ -1548,7 +1548,7 @@
             "review": 13, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "1", 
+            "value": 1, 
             "date_created": "2011-07-13 19:41:17", 
             "widget_id": 13
         }
@@ -1562,7 +1562,7 @@
             "review": 13, 
             "created_by": null, 
             "widget_type": 24, 
-            "value": "-50", 
+            "value": -50, 
             "date_created": "2011-07-13 19:41:18", 
             "widget_id": 6
         }
@@ -1576,7 +1576,7 @@
             "review": 13, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "1", 
+            "value": 1, 
             "date_created": "2011-07-13 19:41:18", 
             "widget_id": 8
         }
@@ -1590,7 +1590,7 @@
             "review": 13, 
             "created_by": null, 
             "widget_type": 26, 
-            "value": "wear alone", 
+            "value": 1,
             "date_created": "2011-07-13 19:41:18", 
             "widget_id": 5
         }
@@ -1604,7 +1604,7 @@
             "review": 13, 
             "created_by": null, 
             "widget_type": 26, 
-            "value": "engagement", 
+            "value": 1,
             "date_created": "2011-07-13 19:41:18", 
             "widget_id": 4
         }
@@ -1618,7 +1618,7 @@
             "review": 13, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "1", 
+            "value": 1, 
             "date_created": "2011-07-13 19:41:18", 
             "widget_id": 7
         }
@@ -1632,7 +1632,7 @@
             "review": 13, 
             "created_by": null, 
             "widget_type": 24, 
-            "value": "0", 
+            "value": 0, 
             "date_created": "2011-07-13 19:41:18", 
             "widget_id": 5
         }
@@ -1646,7 +1646,7 @@
             "review": 9, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "0", 
+            "value": 0, 
             "date_created": "2011-07-14 08:46:07", 
             "widget_id": 14
         }
@@ -1660,7 +1660,7 @@
             "review": 15, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "1", 
+            "value": 1, 
             "date_created": "2011-07-15 09:05:21", 
             "widget_id": 17
         }
@@ -1674,7 +1674,7 @@
             "review": 15, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "1", 
+            "value": 1, 
             "date_created": "2011-07-15 09:05:21", 
             "widget_id": 18
         }
@@ -1688,7 +1688,7 @@
             "review": 15, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "1", 
+            "value": 1, 
             "date_created": "2011-07-15 09:05:21", 
             "widget_id": 15
         }
@@ -1702,7 +1702,7 @@
             "review": 15, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "1", 
+            "value": 1, 
             "date_created": "2011-07-15 09:05:21", 
             "widget_id": 16
         }
@@ -1716,7 +1716,7 @@
             "review": 17, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "1", 
+            "value": 1, 
             "date_created": "2011-07-15 09:51:11", 
             "widget_id": 17
         }
@@ -1730,7 +1730,7 @@
             "review": 17, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "0", 
+            "value": 0, 
             "date_created": "2011-07-15 09:51:11", 
             "widget_id": 18
         }
@@ -1744,7 +1744,7 @@
             "review": 17, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "1", 
+            "value": 1, 
             "date_created": "2011-07-15 09:51:11", 
             "widget_id": 15
         }
@@ -1758,7 +1758,7 @@
             "review": 17, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "1", 
+            "value": 1, 
             "date_created": "2011-07-15 09:51:11", 
             "widget_id": 16
         }
@@ -1772,7 +1772,7 @@
             "review": 18, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "1", 
+            "value": 1, 
             "date_created": "2011-07-15 09:51:46", 
             "widget_id": 17
         }
@@ -1786,7 +1786,7 @@
             "review": 18, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "1", 
+            "value": 1, 
             "date_created": "2011-07-15 09:51:46", 
             "widget_id": 18
         }
@@ -1800,7 +1800,7 @@
             "review": 18, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "1", 
+            "value": 1, 
             "date_created": "2011-07-15 09:51:46", 
             "widget_id": 15
         }
@@ -1814,7 +1814,7 @@
             "review": 18, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "1", 
+            "value": 1, 
             "date_created": "2011-07-15 09:51:46", 
             "widget_id": 16
         }
@@ -1828,7 +1828,7 @@
             "review": 19, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "1", 
+            "value": 1, 
             "date_created": "2011-07-15 11:18:48", 
             "widget_id": 17
         }
@@ -1842,7 +1842,7 @@
             "review": 19, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "0", 
+            "value": 0, 
             "date_created": "2011-07-15 11:18:48", 
             "widget_id": 18
         }
@@ -1856,7 +1856,7 @@
             "review": 19, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "1", 
+            "value": 1, 
             "date_created": "2011-07-15 11:18:48", 
             "widget_id": 15
         }
@@ -1870,7 +1870,7 @@
             "review": 19, 
             "created_by": null, 
             "widget_type": 23, 
-            "value": "1", 
+            "value": 1, 
             "date_created": "2011-07-15 11:18:48", 
             "widget_id": 16
         }
