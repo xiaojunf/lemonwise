@@ -8,9 +8,9 @@
             "title": "Style", 
             "date_updated": "2011-07-07 15:03:01", 
             "created_by": null, 
-            "down_label": "", 
+            "down_label": null, 
             "date_created": "2011-07-07 15:03:01", 
-            "up_label": "", 
+            "up_label": null, 
             "description": "Do they look awesome?"
         }
     }, 
@@ -23,9 +23,9 @@
             "title": "Price", 
             "date_updated": "2011-07-07 15:03:16", 
             "created_by": null, 
-            "down_label": "", 
+            "down_label": null, 
             "date_created": "2011-07-07 15:03:16", 
-            "up_label": "", 
+            "up_label": null, 
             "description": "Worth the c-note?"
         }
     }, 
@@ -38,9 +38,9 @@
             "title": "Durability", 
             "date_updated": "2011-07-07 15:03:34", 
             "created_by": null, 
-            "down_label": "", 
+            "down_label": null, 
             "date_created": "2011-07-07 15:03:34", 
-            "up_label": "", 
+            "up_label": null, 
             "description": "How do the frames hold up?"
         }
     }, 
@@ -53,9 +53,9 @@
             "title": "Weight", 
             "date_updated": "2011-07-07 15:04:31", 
             "created_by": null, 
-            "down_label": "", 
+            "down_label": null, 
             "date_created": "2011-07-07 15:03:52", 
-            "up_label": "", 
+            "up_label": null, 
             "description": "Happy with the weight?"
         }
     }, 
@@ -68,9 +68,9 @@
             "title": "Comfort", 
             "date_updated": "2011-07-07 15:04:20", 
             "created_by": null, 
-            "down_label": "", 
+            "down_label": null, 
             "date_created": "2011-07-07 15:04:20", 
-            "up_label": "", 
+            "up_label": null, 
             "description": "How do they feel?"
         }
     }, 
@@ -83,9 +83,9 @@
             "title": "Cut", 
             "date_updated": "2011-07-13 17:35:53", 
             "created_by": null, 
-            "down_label": "", 
+            "down_label": null, 
             "date_created": "2011-07-12 22:10:44", 
-            "up_label": "", 
+            "up_label": null, 
             "description": "Cut"
         }
     }, 
@@ -98,9 +98,9 @@
             "title": "Clarity", 
             "date_updated": "2011-07-13 17:40:54", 
             "created_by": null, 
-            "down_label": "", 
+            "down_label": null, 
             "date_created": "2011-07-12 22:10:52", 
-            "up_label": "", 
+            "up_label": null, 
             "description": "Clarity"
         }
     }, 
@@ -113,9 +113,9 @@
             "title": "Setting", 
             "date_updated": "2011-07-13 17:41:01", 
             "created_by": null, 
-            "down_label": "", 
+            "down_label": null, 
             "date_created": "2011-07-12 22:10:59", 
-            "up_label": "", 
+            "up_label": null, 
             "description": "Setting"
         }
     }, 
@@ -128,9 +128,9 @@
             "title": "Style", 
             "date_updated": "2011-07-13 17:41:09", 
             "created_by": null, 
-            "down_label": "", 
+            "down_label": null, 
             "date_created": "2011-07-12 22:11:07", 
-            "up_label": "", 
+            "up_label": null, 
             "description": "Style"
         }
     }, 
@@ -143,9 +143,9 @@
             "title": "Craftsmanship", 
             "date_updated": "2011-07-13 17:41:18", 
             "created_by": null, 
-            "down_label": "", 
+            "down_label": null, 
             "date_created": "2011-07-12 22:11:21", 
-            "up_label": "", 
+            "up_label": null, 
             "description": "Craftsmanship"
         }
     }, 
@@ -158,9 +158,9 @@
             "title": "Customer Service", 
             "date_updated": "2011-07-13 17:41:32", 
             "created_by": null, 
-            "down_label": "", 
+            "down_label": null, 
             "date_created": "2011-07-12 22:11:33", 
-            "up_label": "", 
+            "up_label": null, 
             "description": "Customer Service"
         }
     }, 
@@ -173,9 +173,9 @@
             "title": "Order Processing", 
             "date_updated": "2011-07-13 17:41:39", 
             "created_by": null, 
-            "down_label": "", 
+            "down_label": null, 
             "date_created": "2011-07-12 22:11:50", 
-            "up_label": "", 
+            "up_label": null, 
             "description": "Order Processing"
         }
     }, 
@@ -188,9 +188,9 @@
             "title": "Shipping", 
             "date_updated": "2011-07-13 17:41:46", 
             "created_by": null, 
-            "down_label": "", 
+            "down_label": null, 
             "date_created": "2011-07-12 22:12:01", 
-            "up_label": "", 
+            "up_label": null, 
             "description": "Shipping"
         }
     }, 
@@ -203,9 +203,9 @@
             "title": "Returns", 
             "date_updated": "2011-07-13 17:41:52", 
             "created_by": null, 
-            "down_label": "", 
+            "down_label": null, 
             "date_created": "2011-07-12 22:12:08", 
-            "up_label": "", 
+            "up_label": null, 
             "description": "Returns"
         }
     }, 
@@ -218,9 +218,9 @@
             "title": "Pedagogy", 
             "date_updated": "2011-07-15 08:52:37", 
             "created_by": null, 
-            "down_label": "", 
+            "down_label": null, 
             "date_created": "2011-07-15 07:40:59", 
-            "up_label": "", 
+            "up_label": null, 
             "description": "Pedagogy"
         }
     }, 
@@ -233,9 +233,9 @@
             "title": "Knowledge", 
             "date_updated": "2011-07-15 08:52:53", 
             "created_by": null, 
-            "down_label": "", 
+            "down_label": null, 
             "date_created": "2011-07-15 07:50:21", 
-            "up_label": "", 
+            "up_label": null, 
             "description": "Knowledge"
         }
     }, 
@@ -248,9 +248,9 @@
             "title": "Preparation", 
             "date_updated": "2011-07-15 08:53:20", 
             "created_by": null, 
-            "down_label": "", 
+            "down_label": null, 
             "date_created": "2011-07-15 08:51:47", 
-            "up_label": "", 
+            "up_label": null, 
             "description": "Preparation"
         }
     }, 
@@ -263,9 +263,9 @@
             "title": "Timeliness", 
             "date_updated": "2011-07-15 08:53:28", 
             "created_by": null, 
-            "down_label": "", 
+            "down_label": null, 
             "date_created": "2011-07-15 08:53:28", 
-            "up_label": "", 
+            "up_label": null, 
             "description": "Timeliness"
         }
     }, 
@@ -655,7 +655,7 @@
             "updated_by": null, 
             "date_updated": "2011-07-12 22:06:22", 
             "created_by": null, 
-            "label": "", 
+            "label": null, 
             "slider": 5, 
             "value": -100, 
             "date_created": "2011-07-12 22:06:22"
@@ -668,7 +668,7 @@
             "updated_by": null, 
             "date_updated": "2011-07-12 22:06:29", 
             "created_by": null, 
-            "label": "", 
+            "label": null, 
             "slider": 5, 
             "value": -50, 
             "date_created": "2011-07-12 22:06:29"
@@ -681,7 +681,7 @@
             "updated_by": null, 
             "date_updated": "2011-07-12 22:06:57", 
             "created_by": null, 
-            "label": "", 
+            "label": null, 
             "slider": 5, 
             "value": 0, 
             "date_created": "2011-07-12 22:06:57"
@@ -694,7 +694,7 @@
             "updated_by": null, 
             "date_updated": "2011-07-12 22:07:05", 
             "created_by": null, 
-            "label": "", 
+            "label": null, 
             "slider": 5, 
             "value": 50, 
             "date_created": "2011-07-12 22:07:05"
@@ -707,7 +707,7 @@
             "updated_by": null, 
             "date_updated": "2011-07-12 22:07:10", 
             "created_by": null, 
-            "label": "", 
+            "label": null, 
             "slider": 5, 
             "value": 100, 
             "date_created": "2011-07-12 22:07:10"
@@ -720,7 +720,7 @@
             "updated_by": null, 
             "date_updated": "2011-07-12 22:07:59", 
             "created_by": null, 
-            "label": "", 
+            "label": null, 
             "slider": 6, 
             "value": -100, 
             "date_created": "2011-07-12 22:07:59"
@@ -733,7 +733,7 @@
             "updated_by": null, 
             "date_updated": "2011-07-12 22:08:35", 
             "created_by": null, 
-            "label": "", 
+            "label": null, 
             "slider": 6, 
             "value": -50, 
             "date_created": "2011-07-12 22:08:08"
@@ -746,7 +746,7 @@
             "updated_by": null, 
             "date_updated": "2011-07-12 22:08:42", 
             "created_by": null, 
-            "label": "", 
+            "label": null, 
             "slider": 6, 
             "value": 0, 
             "date_created": "2011-07-12 22:08:42"
@@ -759,7 +759,7 @@
             "updated_by": null, 
             "date_updated": "2011-07-12 22:08:47", 
             "created_by": null, 
-            "label": "", 
+            "label": null, 
             "slider": 6, 
             "value": 50, 
             "date_created": "2011-07-12 22:08:47"
@@ -772,7 +772,7 @@
             "updated_by": null, 
             "date_updated": "2011-07-12 22:08:53", 
             "created_by": null, 
-            "label": "", 
+            "label": null, 
             "slider": 6, 
             "value": 100, 
             "date_created": "2011-07-12 22:08:52"
@@ -785,7 +785,7 @@
             "updated_by": null, 
             "date_updated": "2011-07-12 22:09:04", 
             "created_by": null, 
-            "label": "", 
+            "label": null, 
             "slider": 7, 
             "value": -100, 
             "date_created": "2011-07-12 22:09:04"
@@ -798,7 +798,7 @@
             "updated_by": null, 
             "date_updated": "2011-07-12 22:09:11", 
             "created_by": null, 
-            "label": "", 
+            "label": null, 
             "slider": 7, 
             "value": -50, 
             "date_created": "2011-07-12 22:09:11"
@@ -811,7 +811,7 @@
             "updated_by": null, 
             "date_updated": "2011-07-12 22:09:18", 
             "created_by": null, 
-            "label": "", 
+            "label": null, 
             "slider": 7, 
             "value": 0, 
             "date_created": "2011-07-12 22:09:18"
@@ -824,7 +824,7 @@
             "updated_by": null, 
             "date_updated": "2011-07-12 22:09:25", 
             "created_by": null, 
-            "label": "", 
+            "label": null, 
             "slider": 7, 
             "value": 50, 
             "date_created": "2011-07-12 22:09:25"
@@ -837,7 +837,7 @@
             "updated_by": null, 
             "date_updated": "2011-07-12 22:09:30", 
             "created_by": null, 
-            "label": "", 
+            "label": null, 
             "slider": 7, 
             "value": 100, 
             "date_created": "2011-07-12 22:09:30"
@@ -924,7 +924,7 @@
             "created_by": null, 
             "value": "square", 
             "date_created": "2011-07-07 15:15:02", 
-            "description": ""
+            "description": null
         }
     }, 
     {
@@ -938,7 +938,7 @@
             "created_by": null, 
             "value": "oval", 
             "date_created": "2011-07-07 15:15:10", 
-            "description": ""
+            "description": null
         }
     }, 
     {
@@ -952,7 +952,7 @@
             "created_by": null, 
             "value": "round", 
             "date_created": "2011-07-07 15:15:18", 
-            "description": ""
+            "description": null
         }
     }, 
     {
@@ -966,7 +966,7 @@
             "created_by": null, 
             "value": "heart", 
             "date_created": "2011-07-07 15:15:28", 
-            "description": ""
+            "description": null
         }
     }, 
     {
@@ -980,7 +980,7 @@
             "created_by": null, 
             "value": "work", 
             "date_created": "2011-07-07 15:15:42", 
-            "description": ""
+            "description": null
         }
     }, 
     {
@@ -994,7 +994,7 @@
             "created_by": null, 
             "value": "home", 
             "date_created": "2011-07-07 15:15:55", 
-            "description": ""
+            "description": null
         }
     }, 
     {
@@ -1008,7 +1008,7 @@
             "created_by": null, 
             "value": "friends", 
             "date_created": "2011-07-07 15:16:10", 
-            "description": ""
+            "description": null
         }
     }, 
     {
@@ -1022,7 +1022,7 @@
             "created_by": null, 
             "value": "all", 
             "date_created": "2011-07-07 15:16:19", 
-            "description": ""
+            "description": null
         }
     }, 
     {
@@ -1036,7 +1036,7 @@
             "created_by": null, 
             "value": "myself", 
             "date_created": "2011-07-12 22:15:29", 
-            "description": ""
+            "description": null
         }
     }, 
     {
@@ -1050,7 +1050,7 @@
             "created_by": null, 
             "value": "girlfriend", 
             "date_created": "2011-07-12 22:15:48", 
-            "description": ""
+            "description": null
         }
     }, 
     {
@@ -1064,7 +1064,7 @@
             "created_by": null, 
             "value": "Wife", 
             "date_created": "2011-07-12 22:15:58", 
-            "description": ""
+            "description": null
         }
     }, 
     {
@@ -1078,7 +1078,7 @@
             "created_by": null, 
             "value": "mother", 
             "date_created": "2011-07-12 22:16:09", 
-            "description": ""
+            "description": null
         }
     }, 
     {
@@ -1092,7 +1092,7 @@
             "created_by": null, 
             "value": "grandparent", 
             "date_created": "2011-07-12 22:16:26", 
-            "description": ""
+            "description": null
         }
     }, 
     {
@@ -1106,7 +1106,7 @@
             "created_by": null, 
             "value": "Friend", 
             "date_created": "2011-07-12 22:16:37", 
-            "description": ""
+            "description": null
         }
     }, 
     {
@@ -1120,7 +1120,7 @@
             "created_by": null, 
             "value": "daughter", 
             "date_created": "2011-07-12 22:16:54", 
-            "description": ""
+            "description": null
         }
     }, 
     {
@@ -1134,7 +1134,7 @@
             "created_by": null, 
             "value": "engagement", 
             "date_created": "2011-07-12 22:17:08", 
-            "description": ""
+            "description": null
         }
     }, 
     {
@@ -1148,7 +1148,7 @@
             "created_by": null, 
             "value": "wedding", 
             "date_created": "2011-07-12 22:17:52", 
-            "description": ""
+            "description": null
         }
     }, 
     {
@@ -1162,7 +1162,7 @@
             "created_by": null, 
             "value": "Anniversary", 
             "date_created": "2011-07-12 22:18:05", 
-            "description": ""
+            "description": null
         }
     }, 
     {
@@ -1176,7 +1176,7 @@
             "created_by": null, 
             "value": "special gift", 
             "date_created": "2011-07-12 22:18:22", 
-            "description": ""
+            "description": null
         }
     }, 
     {
@@ -1190,7 +1190,7 @@
             "created_by": null, 
             "value": "stack", 
             "date_created": "2011-07-12 22:18:57", 
-            "description": ""
+            "description": null
         }
     }, 
     {
@@ -1204,7 +1204,7 @@
             "created_by": null, 
             "value": "wear alone", 
             "date_created": "2011-07-12 22:19:08", 
-            "description": ""
+            "description": null
         }
     }
 ]

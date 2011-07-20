@@ -11,8 +11,7 @@
             "user": null, 
             "content_type": 20, 
             "is_public": true, 
-            "user_name": "Travis Chase", 
-            "user_email": ""
+            "user_name": "Travis Chase"
         }
     }, 
     {
@@ -21,7 +20,6 @@
         "fields": {
             "comment": "Oh yeah, how are they working out for you?",
             "submit_date": "2011-07-07 16:51:46", 
-            "ip_address": "", 
             "object_pk": "1", 
             "site": 1, 
             "is_removed": false, 
@@ -29,7 +27,7 @@
             "content_type": 9, 
             "is_public": true, 
             "user_name": "David Gandy", 
-            "user_email": ""
+            "user_email": null
         }
     }, 
     {
@@ -46,7 +44,7 @@
             "content_type": 9, 
             "is_public": true, 
             "user_name": "Travis Chase", 
-            "user_email": ""
+            "user_email": null
         }
     }, 
     {
@@ -63,7 +61,7 @@
             "content_type": 20, 
             "is_public": true, 
             "user_name": "Jennifer Whiteside", 
-            "user_email": ""
+            "user_email": null
         }
     }, 
     {
@@ -80,7 +78,7 @@
             "content_type": 20, 
             "is_public": true, 
             "user_name": "Dave Gandy", 
-            "user_email": ""
+            "user_email": null
         }
     }
 ]
