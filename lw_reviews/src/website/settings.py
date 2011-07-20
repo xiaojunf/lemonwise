@@ -164,3 +164,4 @@ LOGGING = {
 }
 
 COMMENTS_APP = 'django.contrib.comments'
+
