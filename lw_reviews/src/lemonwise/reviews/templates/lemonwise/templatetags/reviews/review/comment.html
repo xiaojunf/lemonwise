@@ -1,0 +1,26 @@
+{% load lemonwise_core %}
+{% load widgets %}
+<li{% if can_reply %} class="first-level clearfix"{% endif %} style="display:none;">
+    <div class="comment" data-lemonwise-content-type-id="{{ comment|content_type_id }}" data-lemonwise-object-id="{{ comment.pk }}">
+        <p>{{ comment.comment }}</p>
+    {% if can_reply %}
+        <a href="#" class="button reply white small" data-lemonwise-bind="replyComment">Reply</a>
+    {% endif %}
+        <hr>
+        <p class="author">By <strong>{{ comment.name|anonymoize }}</strong> on <strong>{{ comment.submit_date|date:"F j, Y" }}</strong></p>
+    </div>
+    <ul></ul>
+{% if can_reply %}
+    <div class="clearfix reply-form" style="display:none;">
+        <form action="{% url api-comments review.pk %}" method="post">
+            <h3>Add a comment</h3>
+            <input name="name" type="text" maxlength="50" placeholder="Name">
+            <textarea name="message" placeholder="Type your comment here."></textarea>
+            <a href="#" class="button white small" data-lemonwise-bind="postComment">Post Comment</a>
+            <input name="content_type_id" type="hidden" value="{{ comment|content_type_id }}">
+            <input name="object_id" type="hidden" value="{{ comment.pk }}">
+            {% csrf_token %}
+        </form>
+    </div>
+{% endif %}
+</li>

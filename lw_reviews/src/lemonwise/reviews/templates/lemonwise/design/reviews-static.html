@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="{{STATIC_URL}}css/jquery/smoothness/jquery-ui-1.8.14.custom.css" type="text/css">
+        <script src="{{STATIC_URL}}js/jquery/jquery-1.6.2.js"></script>
+        <script src="{{STATIC_URL}}js/jquery/jquery-ui-1.8.14.custom.min.js"></script>
+        <script src="{{STATIC_URL}}js/lemonwise/design/reviews.js"></script>
+        <script src="{{STATIC_URL}}js/lemonwise/reviews/reviews.js"></script>
+        <script src="{{STATIC_URL}}js/lemonwise/reviews/writeReview.js"></script>
+        <link rel="stylesheet" href="{{STATIC_URL}}css/lemonwise/design/reviews.css" type="text/css">
+    </head>
+    <body>
+        <section id="lemonwise-reviews">
+            <header>
+                <h1>Thompson Reviews</h1>
+            </header>
+            <div class="glance-panel clearfix">
+                <section class="glance">
+                    <header>
+                        <h2>At a Glance</h2>
+                    </header>
+                    <div class="glance column1 clearfix">
+                        <div class="rating overall">
+                            <div class="value">93</div>
+                            <div class="units">percent</div>
+                        </div>
+                        <div class="rating text clearfix">
+                            <div>Recommended</div>
+                            <div><a href="#">Read all 496 reviews &raquo;</a></div>
+                            <div><a href="#">Write a review &raquo;</a></div>
+                         </div>
+                    </div>
+                    <div class="glance column2 clearfix">
+                        <ul>
+                            <li>
+                                <div class="rating">
+                                    <div class="sub-attribute over-90">98</div>
+                                    <div class="title">Style</div>
+                                    <div class="extra">Do they look awesome?</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="rating">
+                                    <div class="sub-attribute over-90">99</div>
+                                    <div class="title">Price</div>
+                                    <div class="extra">Worth the c-note?</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="rating">
+                                    <div class="sub-attribute under-90">57</div>
+                                    <div class="title">Durability</div>
+                                    <div class="extra">How do the frames hold up?</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="rating">
+                                    <div class="sub-attribute over-90">91</div>
+                                    <div class="title">Weight</div>
+                                    <div class="extra">Happy with the weight?</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="rating">
+                                    <div class="sub-attribute under-90">57</div>
+                                    <div class="title">Comfort</div>
+                                    <div class="extra">How do they feel?</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="glance column3 clearfix">
+                        <ul>
+                            <li>
+                                <div class="rating">
+                                    <div class="title">Width</div>
+                                    <div class="extra">How is the width of the frames?</div>
+                                    <div class="widget slider">
+                                        <div id="overall-width-slider"></div>
+                                        <label>narrow</label>
+                                        <label>wide</label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="rating">
+                                    <div class="title">Bridge</div>
+                                    <div class="extra">How do they fit on the nose?</div>
+                                    <div class="widget slider">
+                                        <div id="overall-bridge-slider"></div>
+                                        <label>snug</label>
+                                        <label>loose</label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="rating">
+                                    <div class="title">Temple</div>
+                                    <div class="extra">How is the length?</div>
+                                    <div class="widget slider">
+                                        <div id="overall-temple-slider"></div>
+                                        <label>short</label>
+                                        <label>long</label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="rating">
+                                    <div class="title">Color</div>
+                                    <div class="extra">Is the color as expected?</div>
+                                    <div class="widget slider">
+                                        <div id="overall-color-slider"></div>
+                                        <label>lighter</label>
+                                        <label>darker</label>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            <div class="write-a-review-panel clearfix" style="display:none">
+                <header>
+                    <h2>Write a Review</h2>
+                </header>
+                <section class="write-a-review clearfix">
+                    <div class="write-overall-widget clearfix">
+                        <h3>Overall Verdict</h3>
+                        <p>Would you recommend these to a friend?</p>
+                        <a href="#" class="thumbs-up"></a>
+                        <a href="#" class="thumbs-down"></a>
+                    </div>
+                    <div>
+                        <ul class="write-radio">
+                            <li class="write-radio-widget clearfix">
+                                <div>
+                                    <h3>Your face can best be described as:</h3>
+                                    <ul>
+                                        <li>
+                                            <input type="radio" name="face-review" value="square">Square
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="face-review" value="oval">Oval
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="face-review" value="round">Round
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="face-review" value="heart">Heart
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="write-radio-widget clearfix">
+                                <div>
+                                    <h3>You wear these most often when:</h3>
+                                    <ul>
+                                        <li>
+                                            <input type="radio" name="wear-often-review" value="at-work">At work.
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="wear-often-review" value="relaxing-at-home">Relaxing at home.
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="wear-often-review" value="out-with-friends">Out with friends.
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="wear-often-review" value="all-the-time">All the time.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul
+                        <ul class="write-slider">
+                            <li class="write-slider-widget clearfix">
+                                <div class="write-slider-widget clearfix">
+                                    <h3>How is the width of the frames?</h3>
+                                    <div class="widget slider">
+                                        <div id="write-a-review-width-slider"></div>
+                                        <label>narrow</label>
+                                        <label>wide</label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="clearfix">
+                                <div class="write-slider-widget clearfix">
+                                    <h3>How do they fit on the nose?</h3>
+                                    <div class="widget slider">
+                                        <div id="write-a-review-bridge-slider"></div>
+                                        <label>snug</label>
+                                        <label>loose</label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="clearfix">
+                                <div class="write-slider-widget clearfix">
+                                    <h3>How is the length of the temple?</h3>
+                                    <div class="widget slider">
+                                        <div id="write-a-review-temple-slider"></div>
+                                        <label>short</label>
+                                        <label>long</label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="clearfix">
+                                <div class="write-slider-widget clearfix">
+                                    <h3>Is the color as expected?</h3>
+                                    <div class="widget slider">
+                                        <div id="write-a-review-color-slider"></div>
+                                        <label>lighter</label>
+                                        <label>darker</label>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="write-thumbs">
+                            <li class="clearfix">
+                                <div class="write-thumbs-widget">
+                                    <h3>Style</h3>
+                                    <a href="#" class="thumbs-up"></a>
+                                    <a href="#" class="thumbs-down"></a>
+                                </div>
+                            </li>
+                            <li class="clearfix">
+                                <div class="write-thumbs-widget">
+                                    <h3>Price</h3>
+                                    <a href="#" class="thumbs-up"></a>
+                                    <a href="#" class="thumbs-down"></a>
+                                </div>
+                            </li>
+                            <li class="clearfix">
+                                <div class="write-thumbs-widget">
+                                    <h3>Durability</h3>
+                                    <a href="#" class="thumbs-up"></a>
+                                    <a href="#" class="thumbs-down"></a>
+                                </div>
+                            </li>
+                            <li class="clearfix">
+                                <div class="write-thumbs-widget">
+                                    <h3 class="title">Weight</h3>
+                                    <a href="#" class="thumbs-up"></a>
+                                    <a href="#" class="thumbs-down"></a>
+                                </div>
+                            </li>
+                            <li class="clearfix">
+                                <div class="write-thumbs-widget">
+                                    <h3 class="title">Comfort</h3>
+                                    <a href="#" class="thumbs-up"></a>
+                                    <a href="#" class="thumbs-down"></a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="write-comments">
+                            <div>
+                                <input type="text" placeholder="Your Review Title">
+                                <textarea placeholder="Type your review  here."></textarea>
+                            </div>
+                            <div>
+                                <input type="text" placeholder="Your Name">
+                                <input type="text" placeholder="Your Location">
+                            </div>
+                        </div>
+                        <div class="write-submit">
+                            <a href="#" class="button">Submit Review</a>
+                        </div>
+                    </div>
+                    <footer>
+                    </footer>
+                </section>
+            </div>
+            <div class="helpful-panel clearfix">
+                <article>
+                    <header>
+                        <h2>Most Helpful Positive Review</h2>
+                    </header>
+                    <div class="thumb-column">
+                        <span class="thumbs up large"></span>
+                    </div>
+                    <div>
+                        <ul class="thumbs">
+                            <li>
+                                <span class="thumbs up small"></span>Style
+                            </li>
+                            <li>
+                                <span class="thumbs up small"></span>Price
+                            </li>
+                            <li>
+                                <span class="thumbs up small"></span>Durability
+                            </li>
+                            <li>
+                                <span class="thumbs up small"></span>Weight
+                            </li>
+                            <li>
+                                <span class="thumbs up small"></span>Comfort
+                            </li>
+                        </ul>
+                        <ul class="sliders">
+                            <li>
+                                <div class="helpful clearfix">
+                                    <div class="title">Width</div>
+                                    <div class="widget slider">
+                                        <div id="thumbs-up-width-slider"></div>
+                                        <label>narrow</label>
+                                        <label>wide</label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="helpful clearfix">
+                                    <div class="title">Bridge</div>
+                                    <div class="widget slider">
+                                        <div id="thumbs-up-bridge-slider"></div>
+                                        <label>snug</label>
+                                        <label>loose</label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="helpful clearfix">
+                                    <div class="title">Temple</div>
+                                    <div class="widget slider">
+                                        <div id="thumbs-up-temple-slider"></div>
+                                        <label>short</label>
+                                        <label>long</label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="helpful clearfix">
+                                    <div class="title">Color</div>
+                                    <div class="widget slider">
+                                        <div id="thumbs-up-color-slider"></div>
+                                        <label>lighter</label>
+                                        <label>darker</label>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div>
+                            <span class="quote-title">"Great look, awesome price"</span>
+                            <blockquote class="quote-review">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                                molestie mauris a tortor consequat consectetur. Nullam volutpat,
+                                ante sed rhoncus gravida, purus tellus dictum risus, nec
+                                auctor risus quam at tellus. Aenean varius imperdiet
+                                lectus, a elementum est ullamcorper id.
+                                <div class="align-left"><a href="#">Read the entire review &raquo;</a></div>
+                            </blockquote>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <header>
+                        <h2>Most Helpful Negative Review</h2>
+                    </header>
+                    <div class="thumb-column">
+                        <span class="thumbs down large"></span>
+                    </div>
+                    <div>
+                        <ul class="thumbs">
+                            <li>
+                                <span class="thumbs up small"></span>Style
+                            </li>
+                            <li>
+                                <span class="thumbs up small"></span>Price
+                            </li>
+                            <li>
+                                <span class="thumbs down small"></span>Durability
+                            </li>
+                            <li>
+                                <span class="thumbs down small"></span>Weight
+                            </li>
+                            <li>
+                                <span class="thumbs down small"></span>Comfort
+                            </li>
+                        </ul>
+                        <ul class="sliders">
+                            <li>
+                                <div class="helpful clearfix">
+                                    <div class="title">Width</div>
+                                    <div class="widget slider">
+                                        <div id="thumbs-down-width-slider"></div>
+                                        <label>narrow</label>
+                                        <label>wide</label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="helpful clearfix">
+                                    <div class="title">Bridge</div>
+                                    <div class="widget slider">
+                                        <div id="thumbs-down-bridge-slider"></div>
+                                        <label>snug</label>
+                                        <label>loose</label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="helpful clearfix">
+                                    <div class="title">Temple</div>
+                                    <div class="widget slider">
+                                        <div id="thumbs-down-temple-slider"></div>
+                                        <label>short</label>
+                                        <label>long</label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="helpful clearfix">
+                                    <div class="title">Color</div>
+                                    <div class="widget slider">
+                                        <div id="thumbs-down-color-slider"></div>
+                                        <label>lighter</label>
+                                        <label>darker</label>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div>
+                            <span class="quote-title">"Lorem ipsum dolor sit amet"</span>
+                            <blockquote class="quote-review">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                                molestie mauris a tortor consequat consectetur. Nullam volutpat,
+                                ante sed rhoncus gravida, purus tellus dictum risus, nec
+                                auctor risus quam at tellus. Aenean varius imperdiet
+                                lectus, a elementum est ullamcorper id.
+                                <div class="align-left"><a href="#">Read the entire review &raquo;</a></div>
+                            </blockquote>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="review-browser-panel">
+                <section>
+                    <header class="clearfix">
+                        <div>
+                            <h2>Thompson Review Details</h2>
+                            <h4>Showing reviews 1-10 of 496</h4>
+                        </div>
+                        <div>
+                            <div>
+                                <label>Sort by</label>
+                                <select>
+                                    <option>Newest</option>
+                                    <option>Oldest</option>
+                                </select>
+                            </div>
+                            <ul class="paging">
+                                <li>&laquo; Previous</li>
+                                <li><a href="#">Next &raquo;</a></li>
+                            </ul>
+                        </div>
+                    </header>
+                    <div>
+                        <ul class="reviews clearfix">
+                            <li id="review-1" class="clearfix">
+                                <div>
+                                    <article>
+                                        <header class="clearfix">
+                                            <div class="thumbs up large"></div>
+                                            <div>
+                                                <span class="quote-title">"Awesome Glasses"</span>
+                                                <ul class="extra-info">
+                                                    <li>By <strong>Shannon V</strong> on <strong>6/10/2011</strong></li>
+                                                    <li>From <strong>San Francisco, CA</strong></li>
+                                                    <li>Face shape: <strong>Round</strong></li>
+                                                    <li>Glasses worn: <strong>All the time</strong></li>
+                                                </ul>
+                                            </div>
+                                        </header>
+                                        <ul class="thumbs clearfix">
+                                            <li>
+                                                <span class="thumbs up small"></span>Style
+                                            </li>
+                                            <li>
+                                                <span class="thumbs up small"></span>Price
+                                            </li>
+                                            <li>
+                                                <span class="thumbs up small"></span>Durability
+                                            </li>
+                                            <li>
+                                                <span class="thumbs up small"></span>Weight
+                                            </li>
+                                            <li>
+                                                <span class="thumbs up small"></span>Comfort
+                                            </li>
+                                        </ul>
+                                        <ul class="sliders clearfix">
+                                            <li>
+                                                <div class="helpful clearfix">
+                                                    <div class="title">Width</div>
+                                                    <div class="widget slider">
+                                                        <div id="review-1-width-slider"></div>
+                                                        <label>narrow</label>
+                                                        <label>wide</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="helpful clearfix">
+                                                    <div class="title">Bridge</div>
+                                                    <div class="widget slider">
+                                                        <div id="review-1-bridge-slider"></div>
+                                                        <label>snug</label>
+                                                        <label>loose</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="helpful clearfix">
+                                                    <div class="title">Temple</div>
+                                                    <div class="widget slider">
+                                                        <div id="review-1-temple-slider"></div>
+                                                        <label>short</label>
+                                                        <label>long</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="helpful clearfix">
+                                                    <div class="title">Color</div>
+                                                    <div class="widget slider">
+                                                        <div id="review-1-color-slider"></div>
+                                                        <label>lighter</label>
+                                                        <label>darker</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <footer class="clearfix">
+                                            <p>Was this review helpful?</p>
+                                            <a href="#" class="thumbs up small"></a>
+                                            <a href="#" class="thumbs down small"></a>
+                                        </footer>
+                                    </article>
+                                </div>
+                                <div>
+                                    <blockquote class="quote-review">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                                        molestie mauris a tortor consequat consectetur. Nullam volutpat, ante
+                                        sed rhoncus gravida, purus tellus dictum risus, nec auctor risus quam at tellus.
+                                    </blockquote>
+                                    <section class="discussion">
+                                        <header>
+                                            <h2>Discuss this review</h2>
+                                        </header>
+                                        <ul class="clearfix">
+                                            <li class="first-level clearfix">
+                                                <div class="comment">
+                                                    <p>Were you able to get the bridge adjusted?</p>
+                                                    <a href="#" class="button">Reply</a>
+                                                    <hr>
+                                                    <p class="author">By <strong>Josh C</strong> on <strong>6/11/2011</strong></p>
+                                                </div>
+                                                <ul>
+                                                    <li>
+                                                        <div class="comment">
+                                                            <p>Yes! My optometrist adjusted them easily.</p>
+                                                            <hr>
+                                                            <p class="author">By <strong>Shannon V</strong> on <strong>6/12/2011</strong></p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="comment">
+                                                            <p>Awesome! Grabbing a pair myself!</p>
+                                                            <hr>
+                                                            <p class="author">By <strong>Josh C</strong> on <strong>6/14/2011</strong></p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <footer class="clearfix">
+                                            <h2>Add a comment</h2>
+                                            <input type="text" placeholder="Name">
+                                            <textarea placeholder="Type your comment here."></textarea>
+                                            <a href="#" class="button">Post Comment</a>
+                                        </footer>
+                                    </section>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <footer class="clearfix">
+                        <div>
+                            <h4>Showing reviews 1-10 of 496</h4>
+                        </div>
+                        <div>
+                            <ul class="paging">
+                                <li>&laquo; Previous</li>
+                                <li><a href="#">Next &raquo;</a></li>
+                            </ul>
+                        </div>
+                    </footer>
+                </section>
+            </div>
+        </section>
+    </body>
+</html>

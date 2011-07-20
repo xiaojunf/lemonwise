@@ -1,0 +1,21 @@
+{% load review %}
+{% load lemonwise_core %}
+{% for thumbs in thumbss %}
+<div>
+	<ul class="write-thumbs">
+	{% for thumb in thumbs%}
+		<input type=hidden name='{{thumb.title}}' />
+		<input type="hidden" name="{{thumb.title}}-widget_type_id" value="{{ thumb|content_type_id }}"/>
+	    <input type="hidden" name="{{thumb.title}}-widget_id" value="{{thumb.id}}"/>
+		<li class="write-thumbs-widget clearfix">
+			<div class="clearfix">
+				<h3 class ="title">{{thumb.title}}</h3>
+				<a href="#" class="thumbs up small" onclick="setThumbValue('{{thumb.title}}','1')"></a>
+                <a href="#" class="thumbs down small" onclick="setThumbValue('{{thumb.title}}','0')"></a>
+			</div>
+		</li>
+	{% endfor %}
+	</ul>
+</div>
+{% endfor %}
+		

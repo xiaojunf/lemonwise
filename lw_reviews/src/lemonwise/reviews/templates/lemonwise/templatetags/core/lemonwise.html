@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load lemonwise_core %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="{{STATIC_URL}}css/jquery/smoothness/jquery-ui-1.8.14.custom.css" type="text/css">
+{#        <link rel="stylesheet" href="{{STATIC_URL}}css/lemonwise/design/reviews.css" type="text/css">#}
+{#        <link rel="stylesheet" href="{{STATIC_URL}}css/lemonwise/ask/ask.css" type="text/css">#}
+        <link rel="stylesheet" href="{{STATIC_URL}}{{css}}" type="text/css">
+        <script src="{{STATIC_URL}}js/jquery/jquery-1.6.2.js"></script>
+        <script src="{{STATIC_URL}}js/jquery/jquery-ui-1.8.14.custom.min.js"></script>
+        <script src="{{STATIC_URL}}js/jquery/jquery.tmpl-beta1.min.js"></script>
+		<script type="text/javascript" src="http://dev.jquery.com/view/trunk/plugins/validate/jquery.validate.js"></script>
+        <script src="{{STATIC_URL}}js/lemonwise/reviews/reviews.js"></script>
+        <script src="{{STATIC_URL}}js/lemonwise/reviews/writeReviews.js"></script>
+		<style type="text/css">label.error {color: red;}</style>
+    </head>
+    <body>
+        {% include 'lemonwise/ask/ask.html' %}
+        <section id="lemonwise-reviews">
+            <header class="hr">
+                <h1>Reviews for {{product.name}}</h1>
+            </header>
+            {% display_glance product %}
+            {% display_write_review product %}
+            {% display_helpful helpful %}
+            <a name="reviews"></a>
+            {% display_reviews reviews product start end %}
+        </section>
+    </body>
+</html>

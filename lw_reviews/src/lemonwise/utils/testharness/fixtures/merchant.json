@@ -1,0 +1,691 @@
+[
+    {
+        "pk": 1, 
+        "model": "merchant.merchant", 
+        "fields": {
+            "domain": "http://warbyparker.com/", 
+            "updated_by": null, 
+            "date_updated": "2011-07-13 10:31:31", 
+            "created_by": null, 
+            "token": "d2665b82-a8e0-11e0-8895-001ff3595284", 
+            "date_created": "2011-07-07 14:33:56", 
+            "name": "Warby Parker"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "merchant.merchant", 
+        "fields": {
+            "domain": "http://gemvara.com/", 
+            "updated_by": null, 
+            "date_updated": "2011-07-12 17:24:48", 
+            "created_by": null, 
+            "token": "845fb045-ace6-11e0-b578-5855caf301af", 
+            "date_created": "2011-07-12 17:24:47", 
+            "name": "Gemvara"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "merchant.merchant", 
+        "fields": {
+            "domain": "http://tutorspree.com/", 
+            "updated_by": null, 
+            "date_updated": "2011-07-15 07:37:17", 
+            "created_by": null, 
+            "token": "f0975d2e-aeef-11e0-9bdf-5855caf301af", 
+            "date_created": "2011-07-15 07:37:17", 
+            "name": "Tutorspree"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "merchant.category", 
+        "fields": {
+            "merchant": 1, 
+            "updated_by": null, 
+            "parent": 3, 
+            "date_updated": "2011-07-07 14:42:34", 
+            "created_by": null, 
+            "date_created": "2011-07-07 14:34:10", 
+            "name": "Optical"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "merchant.category", 
+        "fields": {
+            "merchant": 1, 
+            "updated_by": null, 
+            "parent": 3, 
+            "date_updated": "2011-07-07 14:42:29", 
+            "created_by": null, 
+            "date_created": "2011-07-07 14:39:18", 
+            "name": "Sunwear"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "merchant.category", 
+        "fields": {
+            "merchant": 1, 
+            "updated_by": null, 
+            "parent": 11, 
+            "date_updated": "2011-07-07 15:17:55", 
+            "created_by": null, 
+            "date_created": "2011-07-07 14:41:01", 
+            "name": "Men"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "merchant.category", 
+        "fields": {
+            "merchant": 1, 
+            "updated_by": null, 
+            "parent": 11, 
+            "date_updated": "2011-07-07 15:18:03", 
+            "created_by": null, 
+            "date_created": "2011-07-07 14:41:12", 
+            "name": "Women"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "merchant.category", 
+        "fields": {
+            "merchant": 1, 
+            "updated_by": null, 
+            "parent": 4, 
+            "date_updated": "2011-07-07 14:42:05", 
+            "created_by": null, 
+            "date_created": "2011-07-07 14:41:52", 
+            "name": "Optical"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "merchant.category", 
+        "fields": {
+            "merchant": 1, 
+            "updated_by": null, 
+            "parent": 4, 
+            "date_updated": "2011-07-07 14:46:49", 
+            "created_by": null, 
+            "date_created": "2011-07-07 14:46:49", 
+            "name": "Sunwear"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "merchant.category", 
+        "fields": {
+            "merchant": 1, 
+            "updated_by": null, 
+            "parent": 1, 
+            "date_updated": "2011-07-07 14:47:34", 
+            "created_by": null, 
+            "date_created": "2011-07-07 14:47:34", 
+            "name": "Zagg"
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "merchant.category", 
+        "fields": {
+            "merchant": 1, 
+            "updated_by": null, 
+            "parent": 1, 
+            "date_updated": "2011-07-07 14:47:42", 
+            "created_by": null, 
+            "date_created": "2011-07-07 14:47:42", 
+            "name": "Huxley"
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "merchant.category", 
+        "fields": {
+            "merchant": 1, 
+            "updated_by": null, 
+            "parent": 5, 
+            "date_updated": "2011-07-07 14:48:14", 
+            "created_by": null, 
+            "date_created": "2011-07-07 14:48:14", 
+            "name": "Zagg"
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "merchant.category", 
+        "fields": {
+            "merchant": 1, 
+            "updated_by": null, 
+            "parent": 5, 
+            "date_updated": "2011-07-07 14:48:23", 
+            "created_by": null, 
+            "date_created": "2011-07-07 14:48:23", 
+            "name": "Huxley"
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "merchant.category", 
+        "fields": {
+            "merchant": 1, 
+            "updated_by": null, 
+            "parent": null, 
+            "date_updated": "2011-07-07 15:17:48", 
+            "created_by": null, 
+            "date_created": "2011-07-07 15:17:48", 
+            "name": "All"
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "merchant.category", 
+        "fields": {
+            "merchant": 2, 
+            "updated_by": null, 
+            "parent": null, 
+            "date_updated": "2011-07-12 17:28:12", 
+            "created_by": null, 
+            "date_created": "2011-07-12 17:28:12", 
+            "name": "All"
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "merchant.category", 
+        "fields": {
+            "merchant": 3, 
+            "updated_by": null, 
+            "parent": null, 
+            "date_updated": "2011-07-15 07:37:21", 
+            "created_by": null, 
+            "date_created": "2011-07-15 07:37:21", 
+            "name": "All Tutors"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "merchant.categorywidget", 
+        "fields": {
+            "category": 11, 
+            "updated_by": null, 
+            "date_updated": "2011-07-07 15:19:55", 
+            "created_by": null, 
+            "widget_type": 23, 
+            "date_created": "2011-07-07 15:19:55", 
+            "widget_id": 1
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "merchant.categorywidget", 
+        "fields": {
+            "category": 11, 
+            "updated_by": null, 
+            "date_updated": "2011-07-07 15:20:13", 
+            "created_by": null, 
+            "widget_type": 23, 
+            "date_created": "2011-07-07 15:20:13", 
+            "widget_id": 2
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "merchant.categorywidget", 
+        "fields": {
+            "category": 11, 
+            "updated_by": null, 
+            "date_updated": "2011-07-07 15:20:25", 
+            "created_by": null, 
+            "widget_type": 23, 
+            "date_created": "2011-07-07 15:20:25", 
+            "widget_id": 3
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "merchant.categorywidget", 
+        "fields": {
+            "category": 11, 
+            "updated_by": null, 
+            "date_updated": "2011-07-07 15:20:32", 
+            "created_by": null, 
+            "widget_type": 23, 
+            "date_created": "2011-07-07 15:20:32", 
+            "widget_id": 4
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "merchant.categorywidget", 
+        "fields": {
+            "category": 11, 
+            "updated_by": null, 
+            "date_updated": "2011-07-07 15:20:41", 
+            "created_by": null, 
+            "widget_type": 23, 
+            "date_created": "2011-07-07 15:20:41", 
+            "widget_id": 5
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "merchant.categorywidget", 
+        "fields": {
+            "category": 11, 
+            "updated_by": null, 
+            "date_updated": "2011-07-07 15:21:02", 
+            "created_by": null, 
+            "widget_type": 24, 
+            "date_created": "2011-07-07 15:21:02", 
+            "widget_id": 1
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "merchant.categorywidget", 
+        "fields": {
+            "category": 11, 
+            "updated_by": null, 
+            "date_updated": "2011-07-07 15:21:10", 
+            "created_by": null, 
+            "widget_type": 24, 
+            "date_created": "2011-07-07 15:21:10", 
+            "widget_id": 2
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "merchant.categorywidget", 
+        "fields": {
+            "category": 11, 
+            "updated_by": null, 
+            "date_updated": "2011-07-07 15:21:18", 
+            "created_by": null, 
+            "widget_type": 24, 
+            "date_created": "2011-07-07 15:21:18", 
+            "widget_id": 3
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "merchant.categorywidget", 
+        "fields": {
+            "category": 11, 
+            "updated_by": null, 
+            "date_updated": "2011-07-07 15:21:25", 
+            "created_by": null, 
+            "widget_type": 24, 
+            "date_created": "2011-07-07 15:21:25", 
+            "widget_id": 4
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "merchant.categorywidget", 
+        "fields": {
+            "category": 11, 
+            "updated_by": null, 
+            "date_updated": "2011-07-07 15:21:35", 
+            "created_by": null, 
+            "widget_type": 26, 
+            "date_created": "2011-07-07 15:21:35", 
+            "widget_id": 1
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "merchant.categorywidget", 
+        "fields": {
+            "category": 11, 
+            "updated_by": null, 
+            "date_updated": "2011-07-07 15:21:46", 
+            "created_by": null, 
+            "widget_type": 26, 
+            "date_created": "2011-07-07 15:21:46", 
+            "widget_id": 2
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "merchant.categorywidget", 
+        "fields": {
+            "category": 12, 
+            "updated_by": null, 
+            "date_updated": "2011-07-13 17:53:22", 
+            "created_by": null, 
+            "widget_type": 23, 
+            "date_created": "2011-07-13 17:53:22", 
+            "widget_id": 6
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "merchant.categorywidget", 
+        "fields": {
+            "category": 12, 
+            "updated_by": null, 
+            "date_updated": "2011-07-13 18:00:28", 
+            "created_by": null, 
+            "widget_type": 23, 
+            "date_created": "2011-07-13 18:00:28", 
+            "widget_id": 7
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "merchant.categorywidget", 
+        "fields": {
+            "category": 12, 
+            "updated_by": null, 
+            "date_updated": "2011-07-13 18:00:35", 
+            "created_by": null, 
+            "widget_type": 23, 
+            "date_created": "2011-07-13 18:00:35", 
+            "widget_id": 8
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "merchant.categorywidget", 
+        "fields": {
+            "category": 12, 
+            "updated_by": null, 
+            "date_updated": "2011-07-13 18:00:43", 
+            "created_by": null, 
+            "widget_type": 23, 
+            "date_created": "2011-07-13 18:00:43", 
+            "widget_id": 9
+        }
+    }, 
+    {
+        "pk": 19, 
+        "model": "merchant.categorywidget", 
+        "fields": {
+            "category": 12, 
+            "updated_by": null, 
+            "date_updated": "2011-07-13 18:01:09", 
+            "created_by": null, 
+            "widget_type": 23, 
+            "date_created": "2011-07-13 18:01:09", 
+            "widget_id": 13
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "merchant.categorywidget", 
+        "fields": {
+            "category": 12, 
+            "updated_by": null, 
+            "date_updated": "2011-07-13 18:01:21", 
+            "created_by": null, 
+            "widget_type": 23, 
+            "date_created": "2011-07-13 18:01:21", 
+            "widget_id": 14
+        }
+    }, 
+    {
+        "pk": 21, 
+        "model": "merchant.categorywidget", 
+        "fields": {
+            "category": 12, 
+            "updated_by": null, 
+            "date_updated": "2011-07-13 18:03:10", 
+            "created_by": null, 
+            "widget_type": 24, 
+            "date_created": "2011-07-13 18:03:10", 
+            "widget_id": 5
+        }
+    }, 
+    {
+        "pk": 22, 
+        "model": "merchant.categorywidget", 
+        "fields": {
+            "category": 12, 
+            "updated_by": null, 
+            "date_updated": "2011-07-13 18:03:25", 
+            "created_by": null, 
+            "widget_type": 24, 
+            "date_created": "2011-07-13 18:03:25", 
+            "widget_id": 6
+        }
+    }, 
+    {
+        "pk": 23, 
+        "model": "merchant.categorywidget", 
+        "fields": {
+            "category": 12, 
+            "updated_by": null, 
+            "date_updated": "2011-07-13 18:03:39", 
+            "created_by": null, 
+            "widget_type": 24, 
+            "date_created": "2011-07-13 18:03:39", 
+            "widget_id": 7
+        }
+    }, 
+    {
+        "pk": 24, 
+        "model": "merchant.categorywidget", 
+        "fields": {
+            "category": 12, 
+            "updated_by": null, 
+            "date_updated": "2011-07-13 18:06:39", 
+            "created_by": null, 
+            "widget_type": 26, 
+            "date_created": "2011-07-13 18:06:39", 
+            "widget_id": 3
+        }
+    }, 
+    {
+        "pk": 25, 
+        "model": "merchant.categorywidget", 
+        "fields": {
+            "category": 12, 
+            "updated_by": null, 
+            "date_updated": "2011-07-13 18:12:47", 
+            "created_by": null, 
+            "widget_type": 26, 
+            "date_created": "2011-07-13 18:12:47", 
+            "widget_id": 4
+        }
+    }, 
+    {
+        "pk": 26, 
+        "model": "merchant.categorywidget", 
+        "fields": {
+            "category": 12, 
+            "updated_by": null, 
+            "date_updated": "2011-07-13 18:12:59", 
+            "created_by": null, 
+            "widget_type": 26, 
+            "date_created": "2011-07-13 18:12:59", 
+            "widget_id": 5
+        }
+    }, 
+    {
+        "pk": 27, 
+        "model": "merchant.categorywidget", 
+        "fields": {
+            "category": 13, 
+            "updated_by": null, 
+            "date_updated": "2011-07-15 07:41:05", 
+            "created_by": null, 
+            "widget_type": 23, 
+            "date_created": "2011-07-15 07:41:05", 
+            "widget_id": 15
+        }
+    }, 
+    {
+        "pk": 28, 
+        "model": "merchant.categorywidget", 
+        "fields": {
+            "category": 13, 
+            "updated_by": null, 
+            "date_updated": "2011-07-15 07:50:23", 
+            "created_by": null, 
+            "widget_type": 23, 
+            "date_created": "2011-07-15 07:50:23", 
+            "widget_id": 16
+        }
+    }, 
+    {
+        "pk": 29, 
+        "model": "merchant.categorywidget", 
+        "fields": {
+            "category": 13, 
+            "updated_by": null, 
+            "date_updated": "2011-07-15 08:51:49", 
+            "created_by": null, 
+            "widget_type": 23, 
+            "date_created": "2011-07-15 08:51:49", 
+            "widget_id": 17
+        }
+    }, 
+    {
+        "pk": 30, 
+        "model": "merchant.categorywidget", 
+        "fields": {
+            "category": 13, 
+            "updated_by": null, 
+            "date_updated": "2011-07-15 08:53:56", 
+            "created_by": null, 
+            "widget_type": 23, 
+            "date_created": "2011-07-15 08:53:56", 
+            "widget_id": 18
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "merchant.product", 
+        "fields": {
+            "sku": "ZAGG-RBM1234", 
+            "category": 7, 
+            "updated_by": null, 
+            "date_updated": "2011-07-07 16:44:00", 
+            "created_by": null, 
+            "date_created": "2011-07-07 14:55:37", 
+            "name": "Revolver Black Matte"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "merchant.product", 
+        "fields": {
+            "sku": "ZAGG-SC1576", 
+            "category": 7, 
+            "updated_by": null, 
+            "date_updated": "2011-07-07 14:56:06", 
+            "created_by": null, 
+            "date_created": "2011-07-07 14:56:06", 
+            "name": "Striped Chestnut"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "merchant.product", 
+        "fields": {
+            "sku": "ZAGG-TW8823", 
+            "category": 7, 
+            "updated_by": null, 
+            "date_updated": "2011-07-07 14:56:30", 
+            "created_by": null, 
+            "date_created": "2011-07-07 14:56:30", 
+            "name": "Tennessee Whiskey"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "merchant.product", 
+        "fields": {
+            "sku": "HUX-RB1043", 
+            "category": 8, 
+            "updated_by": null, 
+            "date_updated": "2011-07-07 14:58:27", 
+            "created_by": null, 
+            "date_created": "2011-07-07 14:58:27", 
+            "name": "Revolver Black"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "merchant.product", 
+        "fields": {
+            "sku": "HUX-LT9983", 
+            "category": 8, 
+            "updated_by": null, 
+            "date_updated": "2011-07-07 14:58:49", 
+            "created_by": null, 
+            "date_created": "2011-07-07 14:58:49", 
+            "name": "Light Tortoise"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "merchant.product", 
+        "fields": {
+            "sku": "HUX-TW0935", 
+            "category": 8, 
+            "updated_by": null, 
+            "date_updated": "2011-07-07 15:00:20", 
+            "created_by": null, 
+            "date_created": "2011-07-07 15:00:20", 
+            "name": "Tennessee Whiskey"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "merchant.product", 
+        "fields": {
+            "sku": "HUX-WT8742", 
+            "category": 8, 
+            "updated_by": null, 
+            "date_updated": "2011-07-07 15:00:45", 
+            "created_by": null, 
+            "date_created": "2011-07-07 15:00:45", 
+            "name": "Whiskey Tortoise"
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "merchant.product", 
+        "fields": {
+            "sku": "HUX-HZ82345", 
+            "category": 8, 
+            "updated_by": null, 
+            "date_updated": "2011-07-07 15:01:05", 
+            "created_by": null, 
+            "date_created": "2011-07-07 15:01:05", 
+            "name": "Hazelwood"
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "merchant.product", 
+        "fields": {
+            "sku": "1488003", 
+            "category": 12, 
+            "updated_by": null, 
+            "date_updated": "2011-07-12 22:04:30", 
+            "created_by": null, 
+            "date_created": "2011-07-12 21:44:36", 
+            "name": "Oval Ceres Ring"
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "merchant.product", 
+        "fields": {
+            "sku": "8675309", 
+            "category": 13, 
+            "updated_by": null, 
+            "date_updated": "2011-07-15 07:52:22", 
+            "created_by": null, 
+            "date_created": "2011-07-15 07:52:22", 
+            "name": "Peter E"
+        }
+    }
+]

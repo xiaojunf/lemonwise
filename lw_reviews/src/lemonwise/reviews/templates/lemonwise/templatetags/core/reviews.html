@@ -1,0 +1,43 @@
+{% load review %}
+<div class="review-browser-panel">
+    <section>
+        <header class="clearfix">
+            <div>
+                <a name="review_browser_panel"></a>
+                <h2>{{product.name.identifier}} Review Details</h2>
+                <h4>Showing reviews {{ start|add:1 }}-{{ end }} of {{ total_count }}</h4>
+            </div>
+            <div>
+                <div>
+                    <label>Sort by</label>
+                    <select class="order-results">
+                        <option>Newest</option>
+                        <option>Oldest</option>
+                    </select>
+                </div>
+                <ul class="paging">
+                    <li>&laquo; Previous</li>
+                    <li>Next &raquo;</li>
+                </ul>
+            </div>
+        </header>
+        <div>
+            <ul class="reviews clearfix">
+            {% for review in reviews %}
+                {% display_review review %}
+            {% endfor %}
+            </ul>
+        </div>
+        <footer class="clearfix">
+            <div>
+                <h4>Showing reviews {{ start|add:1 }}-{{ end }} of {{ total_count }}</h4>
+            </div>
+            <div>
+                <ul class="paging">
+                    <li>&laquo; Previous</li>
+                    <li>Next &raquo;</li>
+                </ul>
+            </div>
+        </footer>
+    </section>
+</div>

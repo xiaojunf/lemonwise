@@ -1,0 +1,8 @@
+{% load widgets %}
+<ul class="thumbs clearfix">
+	{% for boolean in thumbss %}
+		<li class="clearfix">
+			{{boolean|small_thumb|safe}}
+		</li>
+	{% endfor %}
+</ul>

@@ -1,0 +1,33 @@
+{% load widgets %}
+<div class="glance column3 clearfix">
+	<ul>
+		{% for slider in sliders %}
+		<li>
+			<div class="rating"> 
+				<div class="title">{{slider.title}}</div>
+				<div class="extra">{{slider.description}}</div>
+				<div class="widget slider">
+					<div class="js_slider{{slider.id}}"></div>
+					<label>{{slider.min_label}}</label>
+					<label>{{slider.max_label}}</label>
+				</div>
+			</div>
+		</li>
+		<script>
+		lw(".js_slider{{slider.id}}").each(function() {
+			lw( this ).slider({
+				disabled: true,
+				value: {{ slider|rating:product }},
+				min: {{slider.min_value}},
+				max: {{slider.max_value}},
+				step: 1,
+				slide: function( event, ui ) {
+					lw( ".reviews-width-amount{{slider.id}}" ).val( "lw" + ui.value );
+				}
+			});
+			lw( ".reviews-width-amount{{slider.id}}" ).val( "lw" + lw( this ).slider( "width-value" ) );
+		});
+		</script>
+		{% endfor %}
+	</ul>
+</div>

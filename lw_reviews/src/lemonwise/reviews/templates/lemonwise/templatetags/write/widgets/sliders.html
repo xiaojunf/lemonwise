@@ -1,0 +1,36 @@
+{% load lemonwise_core %}
+{% load review %}
+<div>
+	<ul class="write-slider">
+		{% for slider in sliders %}
+		<input type="hidden" id="write-a-review-{{slider.title}}-amount" name="{{slider.title}}" value='0'/>
+        <input type="hidden" name="{{slider.title}}-widget_type_id" value="{{ slider|content_type_id }}"/>
+		<input type="hidden" name="{{slider.title}}-widget_id" value="{{slider.pk}}"/>
+		<li class="write-slider-widget clearfix">
+			<div class="clearfix">
+				<h3>{{slider.description}}</h3>
+				<div class="widget slider">
+					<div id="write-a-review-{{slider.title}}"></div>
+					<label>{{slider.min_label}}</label>
+					<label>{{slider.max_label}}</label>
+				</div>	
+			</div>		
+		
+			<script>
+			lw("#write-a-review-{{slider.title}}").each(function() {
+				lw( this ).slider({
+					value:0,
+					min: {{slider.min_value}},
+					max: {{slider.max_value}},
+					step:50,
+					slide: function( event, ui ) {
+						lw( "#write-a-review-{{slider.title}}-amount").val(ui.value );
+					}
+				});
+				lw( "#write-a-review-{{slider.title}}-amount" ).val( lw("#write-a-review-{{slider.title}}" ).slider( "value" ) );
+			});
+			</script>
+		</li>
+		{% endfor %}
+	</ul>
+</div>

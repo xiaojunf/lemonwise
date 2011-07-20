@@ -1,0 +1,26 @@
+<ul class="sliders clearfix">
+	{% for slider in sliders %}
+	<li>
+		<div class="helpful clearfix">
+			<div class="title">{{slider.widget.title}}</div>
+			<div class="widget slider">
+				<div class="js_slider{{slider.id}}"></div>
+				<label>{{slider.widget.min_label}}</label>
+				<label>{{slider.widget.max_label}}</label>
+			</div>
+		</div>
+	</li>
+    <script>
+//        var lw = jQuery.noConflict();
+        lw(".js_slider{{slider.id}}").each(function() {
+            lw( this ).slider({
+                disabled: true,
+                value: {{slider.value}},
+                min: {{slider.widget.min_value}},
+                max: {{slider.widget.max_value}},
+                step: 1
+            });
+        });
+    </script>
+    {% endfor %}
+</ul>

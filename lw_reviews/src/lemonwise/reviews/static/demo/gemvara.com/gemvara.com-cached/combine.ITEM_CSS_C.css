@@ -1,0 +1,514 @@
+#productImageWrapper {
+    position: relative;
+    height: 364px;
+    width: 370px;
+}
+
+#productImageWrapper a.button {
+    position: absolute;
+    bottom: 6px;
+    right: 6px;
+    z-index: 100;
+}
+
+#productImage {
+    border: 1px solid #ccc;
+    width: 368px;
+    height: 362px;
+    position: relative;
+    background: no-repeat -16px -21px transparent;
+}
+
+#productImage.loading {
+    background-position: -1000px -1000px;
+}
+
+#productThumbs {
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+#productThumbs li {
+    float: left;
+    border: 1px solid #CCC;
+    padding: 0;
+    margin-right: 5px;
+}
+
+#productThumbs li a {
+    display: block;
+}
+
+#productThumbs li img, #productThumbs li a.video {
+    width: 56px;
+    height: 56px;
+    margin: 0;
+    padding: 0;
+    display: block;
+    background: white url(../images/ajax-loader.gif) no-repeat scroll 50% 50%;
+}
+
+#productThumbs li:hover {
+    border-color: #bbb;
+}
+
+#productThumbs li.active {
+    border-color: #aaa;
+}
+
+#productThumbs li.view-gallery {
+    border: 0;
+    padding-top: 14px;
+    padding-left: 5px;
+}
+
+#productThumbs li.view-gallery a {
+    font-size: 11px;
+    line-height: 14px;
+}
+
+#productThumbs li a.video {
+    background-image: url(../images/buttons/video-sprite.jpg);
+    background-position: 0 0;
+}
+
+#productThumbs li a.video:hover {
+    background-position: 0 100%;
+}
+
+#productPage .seven {
+    width: 370px;
+}
+
+#productPage .nine {
+    width: 560px;
+}
+
+#infoP div.tab-content div.tab {
+    height: 230px;
+    max-height: 230px;
+    min-height: 230px;
+    overflow-x: visible;
+    overflow-y: auto;
+    padding: 0 9px;
+    width: 540px;
+}
+
+#infoP div.tab-content {
+    height: 230px;
+    max-height: 230px;
+    min-height: 230px;
+    width: 558px;
+}
+
+#infoP ul.alphabet {
+    font-size: 13px;
+}
+
+#infoP ul.alphabet li a {
+    margin-bottom: 8px;
+}
+
+#promise {
+    float: left;
+    width: 65%;
+    list-style: none;
+    height: 150px;
+}
+
+#promise p {
+    margin-bottom: 0;
+}
+
+#productPage.last-minute .customize, #productPage.last-minute .wishlist-link {
+    display: none;
+}
+
+#addtocart {
+    border-color: transparent #CCC #CCCCCC;
+    border-right: 1px solid #CCC;
+    border-style: none solid solid;
+    border-width: 0 1px 1px;
+    overflow: hidden;
+    padding: 0;
+}
+
+#addtocart #addToCartButton {
+    margin-top: 5px;
+}
+
+#addtocart #billMeLater {
+    margin-top: 5px;
+}
+
+#addtocart div.price-container {
+    float: right;
+    width: 35%;
+    text-align: right;
+    padding: 0;
+}
+
+#gallery {
+    max-width: 880px;
+    min-width: 607px;
+    height: 402px;
+    position: relative;
+}
+
+.resizing {
+    background: white url(../images/ajax-loader.gif) no-repeat scroll 50% 50%;
+}
+
+#galleryImg {
+    min-width: 402px;
+    max-width: 681px;
+    height: 100%;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 206px;
+}
+
+#galleryImg img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    margin: auto;
+    background: white url(../images/ajax-loader.gif) no-repeat scroll 50% 50%;
+}
+
+#galleryImg div.preview {
+    height: 100%;
+}
+
+#galleryImg div.preview img {
+    border: 1px solid #ccc;
+}
+
+#gallerySide {
+    position: absolute;
+    width: 191px;
+    right: 0;
+    top: 0;
+    text-align: center;
+    z-index: 5;
+    zoom: 1;
+}
+
+#gallerySide ul.thumbnails {
+    margin: 0;
+}
+
+#gallerySide .ring-size {
+    margin-bottom: 5px;
+}
+
+#gallerySide ul.thumbnails li {
+    display: inline;
+}
+
+#gallerySide ul.thumbnails li.last {
+    clear: right;
+}
+
+#gallerySide ul.thumbnails li img {
+    width: 56px;
+    height: 56px;
+    margin: 0 5px 5px 0;
+    border: 1px solid #ccc;
+}
+
+#gallerySide ul.thumbnails li.last img {
+    margin: 0 0 5px 0;
+}
+
+#gallerySide ul.thumbnails li.active img {
+    border-color: #aaa;
+}
+
+#moreLikeThis {
+    position: relative;
+    margin-top: 12px;
+    text-align: center;
+    margin: auto;
+}
+
+#moreLikeThis div.wide-load {
+    border-top: 1px solid #ccc;
+    height: 190px;
+    padding: 25px 0;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+}
+
+#moreLikeThis div.wide-load h3 {
+    text-align: center;
+}
+
+#moreLikeThis div.loading {
+    position: absolute;
+    left: -8500px;
+}
+
+#moreLikeThis div.loaded-content {
+    position: relative;
+    width: 100%;
+}
+
+#productPage .six {
+    width: 390px;
+    margin-left: 10px;
+}
+
+#productPage .three {
+    width: 140px;
+    margin-left: 10px;
+}
+
+#itemTitle {
+    margin-bottom: 10px;
+}
+
+#addtocart {
+    border: 0 none transparent;
+    padding: 0;
+    margin: 20px 0 10px;
+    min-height: 200px;
+    overflow: visible !important;
+}
+
+.total-label {
+    font-size: 13px;
+    color: #444;
+    font-weight: 700;
+}
+
+.info-box {
+    margin-top: 35px;
+}
+
+.total-price {
+    font-size: 13px;
+}
+
+.total-price .price-value {
+    font-size: 16px;
+}
+
+#addtocart div.price-container {
+    width: 50%;
+    padding: 0;
+    float: right;
+}
+
+#addtocart div.price-container span {
+    line-height: 18px;
+}
+
+#addtocart #addToCartButton {
+    float: none;
+    margin: 10px 0;
+    display: inline-block;
+}
+
+#addToCartForm {
+    width: 50%;
+    float: left;
+    clear: none;
+}
+
+table.item-details div.table-input {
+    height: auto;
+}
+
+#shareLinks {
+    border: 0 none transparent;
+    padding: 10px 0 0;
+}
+
+table.table.item-details {
+    margin-bottom: 1em;
+}
+
+table.table.item-details thead th {
+    line-height: auto;
+    padding: 0;
+}
+
+#addtocart form.vertical label {
+    padding: 0;
+}
+
+#addToCartForm div.ring-size {
+    margin: 0;
+}
+
+#shareLinks ul.action-links li {
+    float: left;
+    margin: 0 14px 3px 0;
+}
+
+#shareLinks ul.action-links li.share {
+    float: right;
+    margin: 0;
+}
+
+#productThumbs {
+    border-bottom: 0 none;
+}
+
+#confidence p {
+    font-size: 11px;
+    text-align: center;
+    margin: 0 0 10px;
+}
+
+div.cartbox div.fancy {
+    margin: 10px 0;
+}
+
+#tags ul {
+    margin-bottom: 10px;
+    margin-left: 1.25em;
+}
+
+#tags ul li.first {
+    margin-left: -1.25em;
+}
+
+div.info-box table.table.item-details {
+    border-collapse: collapse;
+}
+
+table.item-details th.section-heading {
+    padding: 0 6px 4px 0;
+}
+
+table.item-details tbody tr:first-child th {
+    padding-top: 18px;
+}
+
+table.item-details tbody:first-child tr:first-child th {
+    padding-top: 0;
+}
+
+table.table.item-details tbody tr.even, table.table.item-details tbody tr.alt {
+    background-color: #fff;
+}
+
+table.item-details th {
+    padding: 2px 5px 3px 5px;
+}
+
+table.table.item-details tbody tr td {
+    padding: 2px 5px 3px 5px;
+}
+
+table.table.item-details tbody tr {
+    border-bottom: 1px solid #eee;
+}
+
+table.item-details a.button.verysmall {
+    margin: -1px;
+}
+
+.info-box h5 a {
+    cursor: default;
+}
+
+.info-box h5 {
+    margin-bottom: 5px;
+}
+
+#moreLikeThis {
+    min-height: 120px;
+}
+
+#moreLikeThis ul img {
+    width: 120px;
+    height: 120px;
+    line-height: 20px;
+    display: block;
+    border: 1px solid #eee;
+    margin-left: -2px;
+    background: url("../images/ajax-loader.gif") no-repeat scroll 50% 50% #fff;
+}
+
+#moreLikeThis ul {
+    margin: 0;
+}
+
+#moreLikeThis div.wide-load {
+    text-align: center;
+    width: 100%;
+    border: 0 none;
+    height: 120px;
+    background: url("../images/ajax-loader.gif") no-repeat scroll 50% 50% #fff;
+}
+
+#moreLikeThis div.wide-load h5 {
+    text-align: center;
+}
+
+#moreLikeThis ul li a {
+    text-decoration: none;
+}
+
+#moreLikeThis ul li a span {
+    color: #777;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    text-decoration: none !important;
+}
+
+#moreLikeThis ul li a span {
+    color: #777;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: right;
+    display: block;
+    text-decoration: none !important;
+}
+
+#moreLikeThis ul li a span span {
+    display: inline !important;
+    float: left !important;
+    font-size: .7em;
+    line-height: 20px;
+    margin: 0 !important;
+}
+
+#moreLikeThis a.more-results {
+    float: right;
+    margin: 0 0 10px 0;
+    clear: both;
+}
+
+#addToCartForm label.ring-size-select-wrap {
+    margin-top: 3px !important;
+}
+
+#infoP ul.alphabet {
+    font-size: 12px;
+}
+
+ul.alphabet li a {
+    border: 0 none transparent;
+}
+
+#billMeLaterLogo {
+    width: 120px;
+    height: 30px;
+    margin-bottom: 15px;
+}
+
+#frmAskGemvara {
+    width: 30em;
+}
+
+#frmAskGemvara #message {
+    width: 30em;
+}

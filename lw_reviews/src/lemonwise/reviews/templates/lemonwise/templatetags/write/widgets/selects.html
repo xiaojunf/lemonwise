@@ -1,0 +1,22 @@
+{% load review %}
+{% load lemonwise_core %}
+<div>
+    <ul class="write-radio">
+        {% for select in selects %}
+        <input type="hidden" name="{{select.title}}-widget_type_id" value="{{ select|content_type_id }}"/>
+        <input type="hidden" name="{{select.title}}-widget_id" value="{{select.pk}}"/>
+        <li class="write-radio-widget clearfix">
+            <div>
+                <h3>{{select.description}}</h3>
+                <ul>
+                    {% for item in select.items.all %}
+                    <li>
+                        <input type="radio" name="{{select.title}}" value="{{item.value}}"/>{{item.title}}
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+</div>

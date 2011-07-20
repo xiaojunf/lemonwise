@@ -1,0 +1,25 @@
+{% load review %}
+{% load widgets %}
+<div class="helpful-panel clearfix">
+    {% for review in reviews %}
+    <article>
+        <header>
+            <h2>Most Helpful {{ review|sentiment }} Review</h2>
+        </header>
+        <div class="review-summary">
+            <div class="thumb-column">
+                {{ review|large_thumb|safe }}
+            </div>
+            <div class="widget-column">
+                {% for key, value in review.group_widgets.items %}
+                    {% display_rating_widgets key value %}
+                {% endfor%}
+            </div>
+        </div>
+        <div class="review-text">
+            <div class="quote-title">"{{review.title}}"</div>
+            <blockquote class="quote-review">{{review.message}}<div class="align-left"><a href="#">Read the entire review &raquo;</a></div></blockquote>
+        </div>
+    </article>
+    {% endfor %}
+</div>

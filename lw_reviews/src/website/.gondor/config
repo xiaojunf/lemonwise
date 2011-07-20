@@ -1,0 +1,9 @@
+[gondor]
+site_key =
+vcs = git
+endpoint = http://api.gondor.io
+
+[app]
+requirements_file = requirements/project.txt
+wsgi_entry_point = deploy.wsgi
+migrations = nashvegas

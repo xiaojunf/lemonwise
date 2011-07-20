@@ -1,0 +1,14 @@
+{% load widgets %}
+<div class="glance column2 clearfix">
+	<ul class="clearfix">
+		{% for boolean in thumbss %}
+			<li class="clearfix">
+				<div class="rating">
+					{{ boolean|rating:product|out_of_100|aggregate_thumb|safe }}
+					<div class="title">{{boolean.title}}</div>
+					<div class="extra">{{boolean.description}}</div>
+				</div>
+			</li>
+		{% endfor %}
+	</ul>
+</div>

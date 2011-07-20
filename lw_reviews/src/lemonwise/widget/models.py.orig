@@ -1,0 +1,79 @@
+from django.db import models
+from django.db.models.aggregates import Avg
+from lemonwise.core.models import AuditModel
+from lemonwise.merchant.models import Merchant
+from lemonwise.reviews.models import ReviewWidget
+
+
+class BaseWidget(AuditModel):
+    merchant = models.ForeignKey(Merchant)
+    title = models.CharField(max_length=255)
+    description = models.TextField(null=True, blank=True)
+
+<<<<<<< HEAD
+    def get_review_widgets(self):
+        content_type = ContentType.objects.get_for_model(self)
+        return ReviewWidget.objects.filter(widget_type=content_type, widget_id=self.pk)
+
+    def get_type(self):
+        content_type = ContentType.objects.get_for_model(self)
+        return content_type.name
+
+=======
+>>>>>>> 38bd8e121c383a39c92904147d686b7f61682fc4
+    class Meta:
+        abstract = True
+
+    def __unicode__(self):
+        return '%s: %s' % (self.merchant, self.title,)
+
+
+class ThumbsWidget(BaseWidget):
+    up_label = models.CharField(max_length=50, null=True, blank=True)
+    down_label = models.CharField(max_length=50, null=True, blank=True)
+
+    def get_rating(self, product):
+        all_ratings = ReviewWidget.objects.for_widget(self)
+        product_ratings = all_ratings.filter(review__product=product)
+        try:
+            return int(100 * product_ratings.aggregate(Avg('value'))['value__avg'])
+        except:
+            return -1
+
+
+class SliderWidget(BaseWidget):
+    min_value = models.IntegerField()
+    max_value = models.IntegerField()
+    min_label = models.CharField(max_length=50, null=True, blank=True)
+    max_label = models.CharField(max_length=50, null=True, blank=True)
+
+    def get_rating(self, product):
+        all_ratings = ReviewWidget.objects.for_widget(self)
+        product_ratings = all_ratings.filter(review__product=product)
+        try:
+            return int(product_ratings.aggregate(Avg('value'))['value__avg'])
+        except:
+            return -1
+
+
+class SliderStep(AuditModel):
+    slider = models.ForeignKey(SliderWidget, related_name='steps')
+    label = models.CharField(max_length=50, null=True, blank=True)
+    value = models.IntegerField()
+
+    def __unicode__(self):
+        return '%s: %s' % (self.slider, self.label)
+
+
+class SelectListWidget(BaseWidget):
+    allows_multiple = models.BooleanField()
+
+
+class SelectListItem(AuditModel):
+    list = models.ForeignKey(SelectListWidget, related_name='items')
+    title = models.CharField(max_length=100)
+    description = models.TextField(null=True, blank=True)
+    value = models.CharField(max_length=100)
+
+    def __unicode__(self):
+        return '%s: %s' % (self.list, self.title)

@@ -1,0 +1,65 @@
+{
+	"schema":{
+		"regular":{
+			"other_recommended":"recommended",
+			"user_name":"user_name",
+			"describe":"describe",
+			"location":"location",
+			"product_name":"product_name",
+			"brand":"brand",
+			"manufacturers_id":"None",
+			"title":"title",
+			"comments":"comments",
+			"similar_items":"similar:",
+			"importance":"none"
+			
+			
+			
+		},
+		"needprocess":{
+			
+			"thumbs":"rating",
+			"helpful_yes":"helpful",
+			"helpful_total":"helpful",
+			"gift":"gift"
+			},
+		
+		"predefine":{
+			"site":"site_url",
+ 			"feature":["shutter speed","image quality","image stabilization","iso", "lcd","ease of operation"]
+							
+		}
+	},
+	
+	"tables":[
+		{
+			"name":"Users",
+			"fields":["site","user_name","describe","location"]
+			
+		},
+		{
+			"name":"Products",
+			"fields":["product_name","brand","manufacturers_id"]
+
+
+		},
+		{	
+			"name":"Reviews",
+			"fields":["site","title","user_id","product_name","date","comments","thumbs","other_recommended","similar_items","gift","helpful_yes","helpful_total"]
+
+		},
+		{
+			"name":"FeatureRatings",
+			"fields":["review_id","feature","feature_thumbs","importance"]
+		
+		}
+
+
+
+	]
+	
+
+	
+	
+
+}

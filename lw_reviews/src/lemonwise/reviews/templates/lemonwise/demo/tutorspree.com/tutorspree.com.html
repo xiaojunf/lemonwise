@@ -1,0 +1,695 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!-- saved from url=(0034)http://www.tutorspree.com/tutor/62 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <script src="{{ STATIC_URL }}demo/{{ merchant }}/{{ merchant }}-cached/saved_resource"
+            type="text/javascript"></script>
+    <script src="{{ STATIC_URL }}demo/{{ merchant }}/{{ merchant }}-cached/saved_resource(1)"
+            type="text/javascript"></script>
+    <style type="text/css">.editLink {
+        display: none;
+        visibility: hidden;
+    }</style>
+    <style type="text/css">
+        .close_image {
+            float: left;
+        }
+    </style>
+
+    <!---->
+
+
+    <title>Peter E - Boston, MA Tutor | Tutorspree</title>
+    <!--<base href="http://www.tutorspree.com/">-->
+    <base href=".">
+
+    <link href="{{ STATIC_URL }}demo/{{ merchant }}/{{ merchant }}-cached/profile.css" rel="stylesheet" type="text/css">
+    <script async="" defer="true"
+            src="{{ STATIC_URL }}demo/{{ merchant }}/{{ merchant }}-cached/welcome-assist.js"></script>
+    <script type="text/javascript" async=""
+            src="{{ STATIC_URL }}demo/{{ merchant }}/{{ merchant }}-cached/loader1.js"></script>
+    <script type="text/javascript" async=""
+            src="{{ STATIC_URL }}demo/{{ merchant }}/{{ merchant }}-cached/ga.js"></script>
+    <script type="text/javascript"
+            src="{{ STATIC_URL }}demo/{{ merchant }}/{{ merchant }}-cached/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript"
+            src="{{ STATIC_URL }}demo/{{ merchant }}/{{ merchant }}-cached/jquery.ui.core.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}demo/{{ merchant }}/{{ merchant }}-cached/modal.js"></script>
+    <script type="text/javascript">var _sf_startpt = (new Date()).getTime()</script>
+    <!-- addl code -->
+    <link href="{{ STATIC_URL }}demo/{{ merchant }}/{{ merchant }}-cached/facebox.css" media="screen" rel="stylesheet"
+          type="text/css">
+    <script src="{{ STATIC_URL }}demo/{{ merchant }}/{{ merchant }}-cached/facebox.js" type="text/javascript"></script>
+    <link href="{{ STATIC_URL }}demo/{{ merchant }}/{{ merchant }}-cached/default.css" rel="stylesheet" type="text/css">
+    <!-- uncomment for live -->
+    <script src="{{ STATIC_URL }}demo/{{ merchant }}/{{ merchant }}-cached/maps" type="text/javascript"></script>
+    <script src="{{ STATIC_URL }}demo/{{ merchant }}/{{ merchant }}-cached/main.js" type="text/javascript"></script>
+    <style type="text/css">@media print {
+        .gmnoprint {
+            display: none
+        }
+    }
+
+    @media screen {
+        .gmnoscreen {
+            display: none
+        }
+    }</style>
+    <script type="text/javascript">
+        //<![CDATA[
+        function load() {
+            if (GBrowserIsCompatible()) {
+                var map = new GMap2(document.getElementById("gmapsframe"));
+                map.setCenter(new GLatLng(42.3102836, -71.1164283), 13);
+            }
+        }
+        //]]>
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            load();
+            $('#dialog').jqm();
+            $('a[rel*=facebox]').facebox();
+            $('.msgbutton').live('click', function() {
+
+                if (allow_message_submit()) {
+
+                }
+                else {
+                    return false;
+                }
+
+
+            });
+
+        });
+
+        function allow_message_submit() {
+
+
+            if (!censor_validate_content($('#msg').val(), true)) return(false);
+
+            else return true;
+        }
+
+
+        var censor_attempt_counter = 0;
+        function censor_validate_content(message, show_warning) {
+            /* Censoring */
+            var re_airbnb = /tutorspree\.com/;
+
+
+// Very simplified --- any of these things probably signifiy a website
+            var re_http = /(ftp|http|https):\/\//i;
+            var re_www = /www\.\w+/i;
+            var re_domain_ext = /\w+\.(com|net|org|biz|ws|name)/i;
+
+            var re_phone_number = /[0-9 \-\(\)\.\+\\=]{9,100}\d/; // allow / since it commonly used in dates 1/1/2010
+//var re_phone_number = /([0-9]{3,9}[\-.\50 ]?){3,9}/; 
+
+            var re_phone_word = /((zero|one|two|three|four|five|six|seven|eight|nine)\W+){6,100}/i;
+
+            var re_email = /\w+(\.\w+){0,1}(@)[\w|\-]+(\.|\W{1,3}dot\W{1,3})\w+/;
+            var re_email_domain = /( aol|gmail|hotmail|msn|yahoo)(\.com){0,1}/i;
+
+
+            if (re_airbnb.test(message)) {
+                return(true); // if the message refers to airbnb.com, then we give it a free pass
+            }
+
+            var is_website = (re_http.test(message) || re_www.test(message) || re_domain_ext.test(message));
+            var is_phone = (re_phone_number.test(message) || re_phone_word.test(message));
+            var is_email = (re_email.test(message) || re_email_domain.test(message));
+
+            if (is_website || is_phone || is_email) {
+                censor_attempt_counter++;
+
+                if ((censor_attempt_counter > 3) && show_warning) {
+                    alert("Warning: It appears you are trying to send contact information, which is against our terms of service.\n\nTo exchange contact info, schedule a lesson - You won't be billed until after a lesson happens. If you decide you don't want to work with a tutor, just cancel the lesson and you won't be billed. \n\nPlease remove your contact info and re-send the message. \n\nIf you have any questions, please call us at (888) 886-2508, or email us at info@tutorspree.com.");
+                } else {
+                    alert("It appears you are trying to send contact information, which is against our terms of service.\n\nTo exchange contact info, schedule a lesson - You won't be billed until after a lesson happens. If you decide you don't want to work with a tutor, just cancel the lesson and you won't be billed. \n\nPlease remove your contact info and re-send the message. \n\nIf you have any questions, please call us at (888) 886-2508, or email us at info@tutorspree.com. ");
+                }
+                return(false);
+            }
+
+            // make sure there is a message
+            //if ((message=="Type message here...") || (message==""))  {
+            //    alert('Please enter a message to send.');
+            //    return (false);
+            //}
+
+            return(true);
+        }
+    </script>
+
+    <script type="text/javascript" charset="UTF-8"
+            src="{{ STATIC_URL }}demo/{{ merchant }}/{{ merchant }}-cached/{mod_drag,mod_ctrapi}.js"></script>
+    <script src="{{ STATIC_URL }}demo/{{ merchant }}/{{ merchant }}-cached/8600-428-10-7499.js" async=""
+            defer=""></script>
+    <script src="{{ STATIC_URL }}demo/{{ merchant }}/{{ merchant }}-cached/application.js" async="" defer=""></script>
+    <style type="text/css">.olark-key, #hbl_code, #olark-data {
+        display: none !important;
+    }</style>
+    <script src="{{ STATIC_URL }}demo/{{ merchant }}/{{ merchant }}-cached/cache.js" async="" defer=""></script>
+    <link id="habla_style_div" type="text/css" rel="stylesheet"
+          href="{{ STATIC_URL }}demo/{{ merchant }}/{{ merchant }}-cached/9cf11d2c5204220eb1ca3e5514b45944.css">
+</head>
+<body>
+<div class="wrap">
+<div class="header"><a class="logo" href=""><img
+        src="{{ STATIC_URL }}demo/{{ merchant }}/{{ merchant }}-cached/new-logo3.png" alt="Private Tutors"
+        style="padding-top:10px; padding-bottom:5px;"></a>
+
+    <div class="headerRight">
+        <h1>helps you find great private tutors.</h1>
+        <ul class="topnav">
+            <li><a href="http://www.tutorspree.com/hello">Find Tutors</a></li>
+            <li><a href="http://www.tutorspree.com/login">Login</a></li>
+            <li><a href="http://www.tutorspree.com/signup">Sign Up</a></li>
+
+            <li><a href="http://www.tutorspree.com/update-profile/new"><img
+                    src="{{ STATIC_URL }}demo/{{ merchant }}/{{ merchant }}-cached/sgnbtn.gif" alt=" "></a></li>
+        </ul>
+        <span class="helpbar">Questions? Need Help? Call us <strong class="phone">1-888-886-2508</strong></span></div>
+</div>
+
+<!-- header -->
+<div class="mainbody">
+    <div class="sidebar">
+        <div class="profilePic"><img src="{{ STATIC_URL }}demo/{{ merchant }}/{{ merchant }}-cached/32755Photo 2.jpg"
+                                     alt="Peter E - Boston, MA Tutor" width="155" height="235">
+
+        </div>
+        <span class="linkWrap"><a class="backto" href="http://www.tutorspree.com/browse/boston-ma-tutors">View other
+            tutors nearby</a></span>
+        <ul class="sideNav hdrspace">
+
+            <li><a class="backto" href="http://www.tutorspree.com/browse/boston-ma-tutors">Boston, MA Tutors</a></li>
+            <li><a class="backto" href="http://www.tutorspree.com/browse/boston-ma-02130-tutors">02130</a></li>
+            <!--<li><a href="http://www.tutorspree.com">Tutor Search</a></li>-->
+        </ul>
+
+
+    </div>
+    <!-- sidebar -->
+    <div class="maincon">
+        <div class="primary">
+            <div class="profile">
+
+                <a style="position: relative; float: right; display:inline;" class="editLink"
+                   href="http://www.tutorspree.com/edit/62/name" rel="facebox nofollow">edit</a>
+
+
+                <h3>Peter E</h3>
+                <h4>Boston, MA Tutor</h4>
+                <span class="price">$45 / hr</span>
+                <a href="http://www.tutorspree.com/contact.php?id=62&name=Peter" rel="facebox nofollow"
+                   class="linkbtn"></a><br class="clear">
+                <a style="position: relative; float: right; display:inline;"
+                   href="http://www.tutorspree.com/edit/62/statement" class="editLink" rel="facebox nofollow">edit</a>
+
+                <p id="con1">I majored in French and Italian in college, and have been teaching high school French for
+                    the past 5 years. </p>
+
+                <p id="con2" style="display:none;">I majored in French and Italian in college, and have been teaching
+                    high school French for the past 5 years.</p>
+
+
+            </div>
+            <!-- Lemonwise Start -->
+            {% load lemonwise_core %}
+            {% lemonwise %}
+            <!-- Lemonwise End -->
+            <!-- End of message list -->
+            <div class="msgList">
+                <strong class="review">Peer Reviews (1)</strong><br>
+                <dl>
+                    <dd>
+							<span class="picWrap">
+								<img src="{{ STATIC_URL }}demo/{{ merchant }}/{{ merchant }}-cached/71505Aaron Headshot.jpg"
+                                     alt="Tutor reviewer Aaron H" width="44" height="72">
+							</span>
+
+                        <div class="msgWrap">
+                            <strong class="msgAuthor"><a href="http://www.tutorspree.com/#">Aaron H</a> said
+                                ...</strong>
+                            <span class="msgTime">January 20th 2011</span>
+
+                            <p>Pete and I lived together for four years, and throughout that time, his incredibly deep
+                                seated respect and care for other people was apparent every day. As a teacher and the
+                                Dean of Students at Trinity, Pete's love of what he does is apparent. </p>
+                            <span class="pointer"></span>
+                        </div>
+                    </dd>
+                </dl>
+
+
+                <div class="reviewStatus before">
+                    <h3>Contact Peter now to schedule a lesson</h3>
+                    Remember to include:
+                    <ul>
+                        <li><strong>What subject</strong> you'd like tutoring in</li>
+                        <li><strong>When</strong> you're free for a lesson</li>
+                        <li><strong>Where</strong> you'd like the lesson to take place</li>
+                    </ul>
+                    <form action="http://www.tutorspree.com/signup" method="post">
+                        <textarea rows="7" cols="30" id="msg" name="msg"></textarea>
+                        <input type="hidden" name="tutor_id" value="62">
+                        <input type="hidden" name="name" value="">
+                        <input type="hidden" name="email" value="">
+                        <input type="hidden" name="from_user" value="true">
+                        <input type="hidden" name="msg_signup" value="true">
+
+                        <input type="submit" class="sendMsg msgbutton" value="">
+
+                        <p style="margin-top:5px;font-size:10px;">After you click Send, you will be asked for your
+                            E-mail and Phone number.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="secondary">
+            <div id="gmapsframe" class="googleMap mb20"
+                 style="width: 320px; height: 200px; background-color: rgb(229, 227, 223); position: relative; ">
+                <div style="position: absolute; left: 0px; top: 0px; overflow-x: hidden; overflow-y: hidden; width: 100%; height: 100%; ">
+                    <div style="left: 0px; top: 0px; z-index: 0; position: absolute; cursor: url(http://maps.gstatic.com/intl/en_us/mapfiles/openhand_8_8.cur), default; ">
+                        <div style="position: absolute; left: 0px; top: 0px; display: none; ">
+                            <div style="position: absolute; left: 0px; top: 0px; z-index: 0; "><img
+                                    style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; "
+                                    src="{{ STATIC_URL }}demo/{{ merchant }}/{{ merchant }}-cached/transparent.png"><img
+                                    style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; "
+                                    src="{{ STATIC_URL }}demo/{{ merchant }}/{{ merchant }}-cached/transparent.png"><img
+                                    style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; "
+                                    src="{{ STATIC_URL }}demo/{{ merchant }}/{{ merchant }}-cached/transparent.png"><img
+                                    style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; "
+                                    src="{{ STATIC_URL }}demo/{{ merchant }}/{{ merchant }}-cached/transparent.png"><img
+                                    style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; "
+                                    src="{{ STATIC_URL }}demo/{{ merchant }}/{{ merchant }}-cached/transparent.png"><img
+                                    style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; "
+                                    src="{{ STATIC_URL }}demo/{{ merchant }}/{{ merchant }}-cached/transparent.png"><img
+                                    style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; "
+                                    src="{{ STATIC_URL }}demo/{{ merchant }}/{{ merchant }}-cached/transparent.png"><img
+                                    style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; "
+                                    src="{{ STATIC_URL }}demo/{{ merchant }}/{{ merchant }}-cached/transparent.png"><img
+                                    style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; "
+                                    src="{{ STATIC_URL }}demo/{{ merchant }}/{{ merchant }}-cached/transparent.png">
+                            </div>
+                        </div>
+                        <div style="position: absolute; left: 0px; top: 0px; ">
+                            <div style="position: absolute; left: 0px; top: 0px; z-index: 0; "><img
+                                    style="left: -277px; top: -280px; width: 256px; height: 256px; -webkit-user-select: none; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; position: absolute; "
+                                    src="{{ STATIC_URL }}demo/{{ merchant }}/{{ merchant }}-cached/lyrs=m@157&hl=en&src=api&x=2476&y=3030&z=13&s=Ga"><img
+                                    style="left: -277px; top: -24px; width: 256px; height: 256px; -webkit-user-select: none; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; position: absolute; "
+                                    src="{{ STATIC_URL }}demo/{{ merchant }}/{{ merchant }}-cached/lyrs=m@157&hl=en&src=api&x=2476&y=3031&z=13&s=Gal"><img
+                                    style="left: -277px; top: 232px; width: 256px; height: 256px; -webkit-user-select: none; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; position: absolute; "
+                                    src="{{ STATIC_URL }}demo/{{ merchant }}/{{ merchant }}-cached/lyrs=m@157&hl=en&src=api&x=2476&y=3032&z=13&s=Gali"><img
+                                    style="left: -21px; top: -280px; width: 256px; height: 256px; -webkit-user-select: none; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; position: absolute; "
+                                    src="{{ STATIC_URL }}demo/{{ merchant }}/{{ merchant }}-cached/lyrs=m@157&hl=en&src=api&x=2477&y=3030&z=13&s=Galil"><img
+                                    style="left: -21px; top: -24px; width: 256px; height: 256px; -webkit-user-select: none; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; position: absolute; "
+                                    src="{{ STATIC_URL }}demo/{{ merchant }}/{{ merchant }}-cached/lyrs=m@157&hl=en&src=api&x=2477&y=3031&z=13&s=Galile"><img
+                                    style="left: -21px; top: 232px; width: 256px; height: 256px; -webkit-user-select: none; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; position: absolute; "
+                                    src="{{ STATIC_URL }}demo/{{ merchant }}/{{ merchant }}-cached/lyrs=m@157&hl=en&src=api&x=2477&y=3032&z=13&s=Galileo"><img
+                                    style="left: 235px; top: -280px; width: 256px; height: 256px; -webkit-user-select: none; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; position: absolute; "
+                                    src="{{ STATIC_URL }}demo/{{ merchant }}/{{ merchant }}-cached/lyrs=m@157&hl=en&src=api&x=2478&y=3030&z=13&s="><img
+                                    style="left: 235px; top: -24px; width: 256px; height: 256px; -webkit-user-select: none; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; position: absolute; "
+                                    src="{{ STATIC_URL }}demo/{{ merchant }}/{{ merchant }}-cached/lyrs=m@157&hl=en&src=api&x=2478&y=3031&z=13&s=G"><img
+                                    style="left: 235px; top: 232px; width: 256px; height: 256px; -webkit-user-select: none; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; position: absolute; "
+                                    src="{{ STATIC_URL }}demo/{{ merchant }}/{{ merchant }}-cached/lyrs=m@157&hl=en&src=api&x=2478&y=3032&z=13&s=Ga">
+                            </div>
+                        </div>
+                        <div style="position: absolute; left: 0px; top: 0px; z-index: 100; "></div>
+                        <div style="position: absolute; left: 0px; top: 0px; z-index: 101; "></div>
+                        <div style="position: absolute; left: 0px; top: 0px; z-index: 102; "></div>
+                        <div style="position: absolute; left: 0px; top: 0px; z-index: 103; "></div>
+                        <div style="position: absolute; left: 0px; top: 0px; z-index: 104; cursor: default; "></div>
+                        <div style="position: absolute; left: 0px; top: 0px; z-index: 105; "></div>
+                        <div style="position: absolute; left: 0px; top: 0px; z-index: 106; "></div>
+                        <div style="position: absolute; left: 0px; top: 0px; z-index: 107; cursor: default; "></div>
+                    </div>
+                </div>
+                <div class="gmnoprint"
+                     style="-webkit-user-select: none; z-index: 0; position: absolute; left: 2px; bottom: 2px; "><a
+                        title="Click to see this area on Google Maps" target="_blank"
+                        href="http://maps.google.com/maps?ll=42.310284,-71.116428&spn=0.025389,0.054932&z=13&key=ABQIAAAAHqLaPT7bCB279BBeXePyOhQ-1-UlhlZ55uz2g5TShh3sWJK6uBTZEhqoH_ezY3Za7kfbPpR1O7GgGQ&mapclient=jsapi&oi=map_misc&ct=api_logo"><img
+                        style="width: 62px; height: 30px; -webkit-user-select: none; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; cursor: pointer; "
+                        src="{{ STATIC_URL }}demo/{{ merchant }}/{{ merchant }}-cached/poweredby.png"></a></div>
+                <div style="-webkit-user-select: none; z-index: 0; position: absolute; right: 3px; bottom: 2px; color: black; font-family: Arial, sans-serif; font-size: 11px; white-space: nowrap; text-align: right; "
+                     dir="ltr"><span>Map data &copy;2011  Google - </span><a
+                        href="http://www.google.com/intl/en_us/help/terms_maps.html" target="_blank"
+                        class="gmnoprint terms-of-use-link" style="color: rgb(119, 119, 204); ">Terms of Use</a></div>
+            </div>
+
+
+            <div class="listing">
+                <h4 style="display:inline;">Experience</h4>
+                <a class="editLink edit" style="position: relative; float: right; display:inline;"
+                   href="http://www.tutorspree.com/edit/62/exp" rel="facebox nofollow">edit</a>
+
+                <!-- <a style="position: relative; float: right; display:inline;" href="#" class="jqModal">edit</a> -->
+                <br>
+                <br>
+
+
+                <div class="jqmWindow jqmID1" id="dialog">
+
+                    <a href="http://www.tutorspree.com/#" class="jqmClose">Close</a>
+                    <hr>
+
+                    <input type="hidden" name="id" value="&#39;62&#39;">
+                    <input type="hidden" name="editEXP" value="1">
+                    <input type="submit" value="Save Changes">
+
+                </div>
+                <!-- begin teaching -->
+                <ul>
+                    <li>
+                        <h2>Boston Trinity Academy</h2>
+                        2006 - 2010<br>
+                        French
+                    </li>
+                </ul>
+                <!-- end teaching -->
+            </div>
+            <div class="listing">
+                <h4 style="display:inline;">Education</h4>
+                <a style="position: relative; float: right; display:inline;" href="http://www.tutorspree.com/edit/62/ed"
+                   class="editLink" rel="facebox nofollow">edit</a>
+                <br>
+                <br>
+                <ul>
+                    <li>
+                        <h2>Harvard</h2>
+                        BA<br>
+                        2006
+                    </li>
+                </ul>
+            </div>
+
+            <div class="listing">
+                <h4 style="display:inline;">Tutoring Subjects</h4>
+                <a style="position: relative; float: right; display:inline;"
+                   href="http://www.tutorspree.com/edit/62/tutoring" class="editLink" rel="facebox nofollow">edit</a>
+                <li><p>This user hasn't added any tutoring subjects yet.</p></li>
+                <!--<table width="100%" border="0" cellspacing="0" cellpadding="0" class="subject">
+                        <tr>
+                            <td class="alginTop">
+                                <strong>Language </strong><br />
+                                Mandarin<br />
+                                Spanish<br />
+                            </td>
+                            <td>&nbsp;</td>
+                            <td class="alginTop">
+                                <strong>Science</strong><br />
+                                AP Physics B<br />
+                                AP Physics C<br />
+                                Physics<br />
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="alginTop">
+                                <strong>Math</strong><br />
+                                    Algebra<br />
+                                    Algebra 2<br />
+                                    AP Calculus AB<br />
+                                    Basic Math<br />
+                                    Geometry<br />
+                                    Precalculus<br />
+
+                            </td>
+                            <td>&nbsp;</td>
+                            <td class="alginTop"><strong>Test Prep</strong><br />
+                                GRE</td>
+                        </tr>
+                    </table>-->
+
+            </div>
+
+
+        </div>
+        <br class="clear">
+    </div>
+
+    <!-- maincon -->
+</div>
+<!-- mainbody -->
+<div class="footer">
+    <div class="ftrArea">
+
+        <p><a href="http://www.tutorspree.com/"><img
+                src="{{ STATIC_URL }}demo/{{ merchant }}/{{ merchant }}-cached/ts-icon.gif"
+                alt="Find private tutors - Tutorspree"></a>
+            <a href="http://www.tutorspree.com/about">ABOUT</a> <a href="http://blog.tutorspree.com/"
+                                                                   target="_new">BLOG</a> <a
+                    href="http://www.tutorspree.com/faq">FAQ</a> <a href="http://www.tutorspree.com/jobs">JOBS</a> <a
+                    href="http://www.tutorspree.com/home-tutors">HOME TUTORS</a> <a
+                    href="http://www.tutorspree.com/privacy-policy">PRIVACY POLICY</a> <a
+                    href="http://www.tutorspree.com/terms">TERMS OF USE</a></p>
+    </div>
+
+
+</div>
+<!-- footer -->
+<!-- footer -->
+</div>
+<!-- wrapper -->
+<script type="text/javascript">
+    var _sf_async_config = {uid:24968,domain:"www.tutorspree.com"};
+    (function() {
+        function loadChartbeat() {
+            window._sf_endpt = (new Date()).getTime();
+            var e = document.createElement('script');
+            e.setAttribute('language', 'javascript');
+            e.setAttribute('type', 'text/javascript');
+            e.setAttribute('src',
+                    (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+                            "js/chartbeat.js");
+            document.body.appendChild(e);
+        }
+
+        var oldonload = window.onload;
+        window.onload = (typeof window.onload != 'function') ?
+                loadChartbeat : function() {
+            oldonload();
+            loadChartbeat();
+        };
+    })();
+
+</script>
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-18313739-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+
+<!-- begin olark code -->
+<script type="text/javascript">/*<![CDATA[*/
+window.olark || (function(k) {
+    var g = window,j = document,a = g.location.protocol == "https:" ? "https:" : "http:",i = k.name,b = "load",h = "addEventListener";
+    (function() {
+        g[i] = function() {
+            (c.s = c.s || []).push(arguments)
+        };
+        var c = g[i]._ = {},f = k.methods.length;
+        while (f--) {
+            (function(l) {
+                g[i][l] = function() {
+                    g[i]("call", l, arguments)
+                }
+            })(k.methods[f])
+        }
+        c.l = k.loader;
+        c.i = arguments.callee;
+        c.p = {0:+new Date};
+        c.P = function(l) {
+            c.p[l] = new Date - c.p[0]
+        };
+        function e() {
+            c.P(b);
+            g[i](b)
+        }
+
+        g[h] ? g[h](b, e, false) : g.attachEvent("on" + b, e);
+        c.P(1);
+        var d = j.createElement("script");
+        m = document.getElementsByTagName("script")[0];
+        d.type = "text/javascript";
+        d.async = true;
+        d.src = a + "//" + c.l;
+        m.parentNode.insertBefore(d, m);
+        c.P(2)
+    })()
+})({loader:(function(a) {
+    return "static.olark.com/jsclient/loader1.js?ts=" + (a ? a[1] : (+new Date))
+})(document.cookie.match(/olarkld=([0-9]+)/)),name:"olark",methods:["configure","extend","declare","identify"]});
+olark.identify('8600-428-10-7499');
+/*]]>*/</script>
+<!-- end olark code -->
+
+
+<div id="facebox" style="display:none;">
+    <div class="popup">
+        <table>
+            <tbody>
+            <tr>
+                <td class="tl"></td>
+                <td class="b"></td>
+                <td class="tr"></td>
+            </tr>
+            <tr>
+                <td class="b"></td>
+                <td class="body">
+                    <div class="content"></div>
+                    <div class="footer"><a href="http://www.tutorspree.com/#" class="close"></a></div>
+                </td>
+                <td class="b"></td>
+            </tr>
+            <tr>
+                <td class="bl"></td>
+                <td class="b"></td>
+                <td class="br"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<script language="javascript" type="text/javascript"
+        src="{{ STATIC_URL }}demo/{{ merchant }}/{{ merchant }}-cached/chartbeat.js"></script>
+<span style="display: none; "><iframe style="display: none !important" id="framesocket10478"
+                                      src="{{ STATIC_URL }}demo/{{ merchant }}/{{ merchant }}-cached/storage.html"
+                                      onload="try{window.framesocket10478()}catch(e){framesocket10478()}"></iframe></span>
+
+<div id="habla_beta_container_do_not_rely_on_div_classes_or_names"
+     class="habla-browser-mozilla habla-desktop olrk-noquirks">
+    <div id="hbl_operator_state_div" class="olrk-available">
+        <div id="hbl_region" class="olrk-normal">
+            <div id="habla_window_state_div" class=" olrk-state-compressed">
+                <div id="habla_window_div"
+                     style="margin-bottom: 0px; bottom: 0px; margin-right: 20px; right: 0px; display: none; position: fixed; margin-top: 0px; margin-left: 20px; "
+                     class="habla_window_div_base hbl_pal_main_width olrk-fixed-bottom olrk-fixed-right ">
+                    <div id="habla_compressed_div" style="display: block; "></div>
+                    <div id="habla_panel_div" style="display: block; "
+                         class="habla_panel_border hbl_pal_main_bg hbl_pal_panel_border hbl_pal_main_font_family hbl_pal_main_font_size ">
+                        <div id="habla_both_div" style="display: block; ">
+                            <div id="habla_topbar_div"
+                                 class="habla_topbar_div_normal hbl_pal_title_fg hbl_pal_title_bg habla_topbar_div_compressed ">
+                                <a id="habla_popout_a"
+                                   class="habla_button habla_button_a_normal hbl_pal_header_font_size hbl_pal_main_font_family hbl_pal_button_bg hbl_pal_button_fg ">
+                                    &gt;</a><a id="habla_closebutton_a"
+                                               class="habla_button habla_button_a_normal hbl_pal_header_font_size hbl_pal_main_font_family hbl_pal_button_bg hbl_pal_button_fg ">x</a><a
+                                    id="habla_sizebutton_a"
+                                    class="habla_button habla_button_a_normal hbl_pal_header_font_size hbl_pal_main_font_family hbl_pal_button_bg hbl_pal_button_fg ">^</a><a
+                                    id="habla_oplink_a"
+                                    class="habla_oplink_a_normal hbl_pal_header_font_size hbl_pal_title_fg ">Click Here
+                                for Live Help</a></div>
+                        </div>
+                        <div id="habla_expanded_div" style="display: none; ">
+                            <div id="habla_middle_div">
+                                <div id="habla_middle_wrapper_div">
+                                    <div id="habla_conversation_div"
+                                         style="height: 155px; overflow-x: hidden; overflow-y: hidden; display: block; "
+                                         class="hbl_panel habla_conversation_div hbl_pal_main_height hbl_pal_control_border hbl_pal_main_fg hbl_pal_main_bg     habla_conversation_message_on ">
+                                        <span>Need help? That's why we're here. Ask us any question you want.</span>
+                                    </div>
+                                    <div id="habla_offline_message_sent_div" style="display: none; "
+                                         class="hbl_panel habla_offline_message_sent_div hbl_pal_main_height hbl_pal_control_border hbl_pal_main_fg ">
+                                        Thank you for your message. We will get back to you as soon as we can.
+                                    </div>
+                                    <div id="habla_offline_message_div" style="display: none; "
+                                         class="hbl_panel habla_offline_message_div hbl_pal_control_border hbl_pal_main_fg ">
+                                        <span id="habla_offline_message_span"></span>
+
+                                        <div class="hbl_txt_wrapper"><textarea id="habla_name_input"
+                                                                               name="habla_name_input"
+                                                                               style="height: 20px; display: block; "
+                                                                               class="habla_wcsend_field habla_wcsend_input_pre habla_wcsend_input_normal hbl_pal_input_pre_fg hbl_pal_main_font_family hbl_pal_input_font_size hbl_pal_control_border "></textarea>
+                                        </div>
+                                        <div class="hbl_txt_wrapper"><textarea id="habla_offline_email_input"
+                                                                               name="habla_offline_email_input"
+                                                                               style="height: 20px; display: block; "
+                                                                               class="habla_wcsend_field habla_wcsend_input_pre habla_wcsend_input_normal hbl_pal_input_pre_fg hbl_pal_main_font_family hbl_pal_input_font_size hbl_pal_control_border "></textarea>
+                                        </div>
+                                        <div class="hbl_txt_wrapper"><textarea id="habla_offline_body_input"
+                                                                               name="habla_offline_body_input"
+                                                                               style="height: 70px; display: block; "
+                                                                               class="habla_wcsend_field habla_wcsend_input_pre habla_wcsend_input_normal hbl_pal_input_pre_fg hbl_pal_main_font_family hbl_pal_input_font_size hbl_pal_control_border "></textarea>
+                                        </div>
+                                        <br id="habla_br"><span id="habla_offline_error_span"
+                                                                class="habla_offline_error_span "></span><input
+                                            id="habla_offline_submit_input" name="habla_offline_submit_input"
+                                            type="submit"
+                                            class="habla_offline_submit_input hbl_pal_offline_submit_fg hbl_pal_control_border hbl_pal_offline_submit_bg "
+                                            value="Send" style="display: block; ">
+
+                                        <div id="habla_offline_clear_div" class="clear_style "></div>
+                                    </div>
+                                    <div id="habla_pre_chat_div" style="height: 155px; display: none; "
+                                         class="hbl_panel habla_pre_chat_div hbl_pal_main_height hbl_pal_main_fg "><span
+                                            id="habla_pre_chat_span">Hi, I am around, click 'start chatting' to contact me.</span>
+
+                                        <div class="hbl_txt_wrapper"><textarea id="habla_pre_chat_name_input"
+                                                                               name="habla_pre_chat_name_input"
+                                                                               style="height: 20px; line-height: 20px; "
+                                                                               class="habla_wcsend_field habla_wcsend_input_pre habla_wcsend_input_normal hbl_pal_input_pre_fg hbl_pal_main_font_family hbl_pal_input_font_size hbl_pal_control_border "></textarea>
+                                        </div>
+                                        <div class="hbl_txt_wrapper"><textarea id="habla_pre_chat_email_input"
+                                                                               name="habla_pre_chat_email_input"
+                                                                               style="height: 20px; line-height: 20px; "
+                                                                               class="habla_wcsend_field habla_wcsend_input_pre habla_wcsend_input_normal hbl_pal_input_pre_fg hbl_pal_main_font_family hbl_pal_input_font_size hbl_pal_control_border "></textarea>
+                                        </div>
+                                        <div class="hbl_txt_wrapper" style="display: none; "><textarea
+                                                id="habla_pre_chat_phone_input" name="habla_pre_chat_phone_input"
+                                                style="height: 20px; line-height: 20px; display: none; "
+                                                class="habla_wcsend_field habla_wcsend_input_pre habla_wcsend_input_normal hbl_pal_input_pre_fg hbl_pal_main_font_family hbl_pal_input_font_size hbl_pal_control_border "></textarea>
+                                        </div>
+                                        <br id="habla_br_2"><span id="habla_pre_chat_error_span"></span><input
+                                                id="habla_pre_chat_submit_input" name="habla_pre_chat_submit_input"
+                                                type="submit"
+                                                class="habla_pre_chat_form_field habla_offline_submit_input hbl_pal_offline_submit_fg hbl_pal_control_border hbl_pal_offline_submit_bg "
+                                                value="Click here to start chatting">
+
+                                        <div id="habla_pre_chat_clear_div" class="clear_style "></div>
+                                    </div>
+                                </div>
+                                <form id="habla_chatform_form" action="http://www.tutorspree.com/#" method="GET"
+                                      autocomplete="off" class="habla_chatform_form " style="display: block; ">
+                                    <div id="habla_input_div" class="habla_input_div ">
+                                        <div class="hbl_txt_wrapper"><textarea id="habla_wcsend_input"
+                                                                               name="habla_wcsend_input"
+                                                                               size="undefined"
+                                                                               style="line-height: 20px; height: 20px; display: block; "
+                                                                               class="habla_wcsend_field habla_wcsend_input_pre habla_wcsend_input_normal hbl_pal_input_pre_fg hbl_pal_main_font_family hbl_pal_input_font_size hbl_pal_control_border "></textarea>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div style="padding-top: 3px !important; padding-right: 0px !important; padding-bottom: 5px !important; padding-left: 0px !important; font-size: 9px; color: rgb(170, 170, 170); text-transform: uppercase; font-family: verdana, sans-serif; text-align: center; letter-spacing: 2px; font-weight: bold; ">
+                                <span style="display:none"><a id="hblink9"
+                                                              style="font-family: verdana, sans-serif; text-transform: uppercase; font-size: 9px !important; letter-spacing: 2px; font-weight: bold; color: rgb(231, 89, 23); "></a>http://www.olark.com</span>Powered
+                                By <a
+                                    href="http://www.olark.com/?rid=8600-428-10-7499&rid=8600-428-10-7499&utm_medium=widget&utm_campaign=powered_by&utm_source=8600-428-10-7499"
+                                    id="hblink99" target="_blank"
+                                    style="font-family: verdana, sans-serif; text-transform: uppercase; font-size: 9px !important; letter-spacing: 2px; font-weight: bold; color: rgb(231, 89, 23); ">Olark</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="habla_closed_div" style="display: none; "></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

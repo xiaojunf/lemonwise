@@ -1,0 +1,92 @@
+[
+    {
+        "pk": 1, 
+        "model": "comments.comment", 
+        "fields": {
+            "comment": "I bought this pair because you loved them so much.", 
+            "user_url": "", 
+            "submit_date": "2011-07-07 16:51:18", 
+            "ip_address": "", 
+            "object_pk": "1", 
+            "site": 1, 
+            "is_removed": false, 
+            "user": null, 
+            "content_type": 20, 
+            "is_public": true, 
+            "user_name": "Travis Chase", 
+            "user_email": ""
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "comments.comment", 
+        "fields": {
+            "comment": "Oh yeah, how are they working out for you?", 
+            "user_url": "", 
+            "submit_date": "2011-07-07 16:51:46", 
+            "ip_address": "", 
+            "object_pk": "1", 
+            "site": 1, 
+            "is_removed": false, 
+            "user": null, 
+            "content_type": 9, 
+            "is_public": true, 
+            "user_name": "David Gandy", 
+            "user_email": ""
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "comments.comment", 
+        "fields": {
+            "comment": "They're my favorite glasses ever!", 
+            "user_url": "", 
+            "submit_date": "2011-07-11 11:26:44", 
+            "ip_address": null, 
+            "object_pk": "1", 
+            "site": 1, 
+            "is_removed": false, 
+            "user": null, 
+            "content_type": 9, 
+            "is_public": true, 
+            "user_name": "Travis Chase", 
+            "user_email": ""
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "comments.comment", 
+        "fields": {
+            "comment": "You bet I love the ring! Everywhere I go, people can't stop asking me about it!", 
+            "user_url": "", 
+            "submit_date": "2011-07-13 22:37:19", 
+            "ip_address": null, 
+            "object_pk": "13", 
+            "site": 1, 
+            "is_removed": false, 
+            "user": null, 
+            "content_type": 20, 
+            "is_public": true, 
+            "user_name": "Jennifer Whiteside", 
+            "user_email": ""
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "comments.comment", 
+        "fields": {
+            "comment": "Peter's always on time for me!", 
+            "user_url": "", 
+            "submit_date": "2011-07-15 11:42:59", 
+            "ip_address": null, 
+            "object_pk": "19", 
+            "site": 1, 
+            "is_removed": false, 
+            "user": null, 
+            "content_type": 20, 
+            "is_public": true, 
+            "user_name": "Dave Gandy", 
+            "user_email": ""
+        }
+    }
+]

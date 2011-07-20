@@ -1,0 +1,2 @@
+data-config.xml, schema.xml, and solrconfig.xml go in example/solr/conf
+everything in "velocity" directory goes in example/solr/conf/velocity

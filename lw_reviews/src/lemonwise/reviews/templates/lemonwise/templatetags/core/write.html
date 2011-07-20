@@ -1,0 +1,45 @@
+
+{% load write %}
+
+<div class="write-a-review-panel clearfix">
+    <header>
+        <h2>Write a Review</h2>
+        <h1 id="test"></h1>
+        <h1 id="recommend"></h1>
+    </header>
+	<section class="write-a-review clearfix">
+
+
+        <form name='write_review' id ='write_review' action='{% url api-write-review product.pk %}' method='post'>
+		{% csrf_token %}
+			<input type="hidden" name="product_id" value="{{product.pk}}"/>
+                
+		    <div class="write-overall-widget clearfix">
+		        <h3>Would you recommend {{product.name}} to a friend?</h3>
+				<input type=hidden name='would_recommend' class="required" />
+		        <a href="#" class="thumbs up large" onclick="setThumbValue('would_recommend','true')"></a>
+		        <a href="#" class="thumbs down large" onclick="setThumbValue('would_recommend','false')"></a>
+		    </div>
+			{% for key, value in widgets %}
+		        {% display_write_widgets key value %}
+		    {% endfor %}
+
+			<div class="write-text">
+		        <div class="write-comments-widget">
+		            <div>
+		                <input name="title" class="required" type="text" placeholder="Your Review Title">
+		                <textarea name="message" class="required" placeholder="Type your review here."></textarea>
+		            </div>
+		            <div>
+		                <input type="text" class="required" name="name" placeholder="Your Name"/>
+		                <input type="text" name="location" placeholder="Your Location"/>
+		                <div class="write-submit">
+		                	<a href="#" class="button" data-lemonwise-bind="postReview" >Submit Review </a>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+	 	</form>
+    </section>
+</div>
+

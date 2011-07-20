@@ -1,0 +1,13 @@
+{% load lemonwise_core %}
+{% load widgets %}	 	
+<ul>
+{% for child in children %} 	
+	<li>
+		<div class="comment">
+			<p>{{child.comment}}</p>
+			<hr>
+			<p class="author">By <strong>{{child.user_name|anonymoize}}</strong> on <strong>{{child.submit_date|date:"F j, Y"}}</strong></p>
+		</div>
+	</li>
+{% endfor %}
+</ul>

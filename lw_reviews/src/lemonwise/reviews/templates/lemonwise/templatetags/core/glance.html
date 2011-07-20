@@ -1,0 +1,24 @@
+{% load product %}
+{% load widgets %}
+<div class="glance-panel clearfix">
+    <section class="glance">
+        <header>
+            <h2>Summary</h2>
+        </header>
+        <div class="glance column1 clearfix">
+            <div class="rating overall">
+                <div class="value">{{ product.get_rating|out_of_100 }}</div>
+                <div class="units">percent</div>
+            </div>
+            <div class="rating text">
+                <div><h1>Recommended</h1></div>
+                <div><a href="#reviews">Based on {{ product.reviews.count }} reviews &raquo;</a></div>
+                <div><a id="write-review" href="#">Write a review &raquo;</a>
+                </div>
+            </div>
+        </div>
+        {% for key, value in product.group_widgets.items %}
+            {% display_aggregate_widgets key value %}
+        {% endfor %}
+    </section>
+</div>

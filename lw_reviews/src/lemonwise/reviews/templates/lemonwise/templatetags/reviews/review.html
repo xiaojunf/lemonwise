@@ -1,0 +1,89 @@
+{% load lemonwise_core %}
+{% load review %}
+{% load widgets %}
+<li id="review-{{review.id}}" class="clearfix review" data-lemonwise-content-type-id="{{ review|content_type_id }}" data-lemonwise-object-id="{{ review.pk }}">
+    <div>
+        <article>
+            <header class="clearfix">
+                {{ review|large_thumb|safe }}
+                <div class="clearfix">
+                    <ul class="extra-info">
+                        <li>By <strong>{{ review.name|anonymoize }}</strong> on
+                            <strong>{{ review.date_created|date:"F j" }}</strong>
+                        </li>
+                        {% if review.location %}
+                            <li>From <strong>{{ review.location }}</strong></li>
+                        {% endif %}
+                        {% for select in review.get_selects %}
+                            <li>{{ select.widget.title }}:<strong>{{ select.value|title }}</strong></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </header>
+            {% for key, value in review.group_widgets.items %}
+                {% display_rating_widgets key value %}
+            {% endfor %}
+            <footer class="clearfix helpful">
+                <form action="{% url api-helpful-vote review.pk %}"
+                      method="post">
+                    {% csrf_token %}
+                    <p>
+                        Was this review helpful?
+                        <a href="#" class="thumbs up small"></a>
+                        <a href="#" class="thumbs down small"></a>
+                    </p>
+                </form>
+            </footer>
+        </article>
+    </div>
+    <div>
+        <div class="quote-title">"{{ review.title }}"</div>
+        <blockquote class="quote-review">
+            {{ review.message }}
+        </blockquote>
+        <section class="discussion">
+            <header>
+                <h2>Discuss this review</h2>
+            </header>
+            <ul class="clearfix">
+            {% for comment in comments %}
+                <li class="first-level clearfix">
+                    <div class="comment" data-lemonwise-content-type-id="{{ comment|content_type_id }}" data-lemonwise-object-id="{{ comment.pk }}">
+                        <a href="#" class="button reply white small" data-lemonwise-bind="replyComment">Reply</a>
+                        <p>{{ comment.comment }}</p>
+                        <hr>
+                        <p class="author">By
+                            <strong>{{ comment.user_name|anonymoize }}</strong>
+                            on
+                            <strong>{{ comment.submit_date|date:"F j, Y" }}</strong>
+                        </p>
+                    </div>
+                    {% display_children comment %}
+                    <div class="clearfix reply-form" style="display:none;">
+                        <form action="{% url api-comments review.pk %}" method="post">
+                            <h3>Add a comment</h3>
+                            <input name="name" type="text" maxlength="50" placeholder="Name">
+                            <textarea name="message" placeholder="Type your comment here."></textarea>
+                            <a href="#" class="button white small" data-lemonwise-bind="postComment">Post Comment</a>
+                            <input name="content_type_id" type="hidden" value="{{ comment|content_type_id }}">
+                            <input name="object_id" type="hidden" value="{{ comment.pk }}">
+                            {% csrf_token %}
+                        </form>
+                    </div>
+                </li>
+            {% endfor %}
+            </ul>
+            <footer class="clearfix">
+                <form action="{% url api-comments review.pk %}" method="post">
+                    <h2>Add a comment</h2>
+                    <input name="name" type="text" maxlength="50" placeholder="Name">
+                    <textarea name="message" placeholder="Type your comment here."></textarea>
+                    <a href="#" class="button white small" data-lemonwise-bind="postComment">Post Comment</a>
+                    <input name="content_type_id" type="hidden" value="{{ review|content_type_id }}">
+                    <input name="object_id" type="hidden" value="{{ review.pk }}">
+                    {% csrf_token %}
+                </form>
+            </footer>
+        </section>
+    </div>
+</li>

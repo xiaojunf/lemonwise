@@ -1,0 +1,104 @@
+<section id="lemonwise-ask">
+    <header class="hr">
+        <h1>Opinion+</h1>
+    </header>
+
+    <div class="ask-panel">
+        <section class="ask">
+            <div>
+                <div>
+                    <a class="ask nav button left large" href="#">&laquo;</a>
+                </div>
+            </div>
+            <div>
+                <div class="photo">
+                    <img src="{{STATIC_URL}}img/jr-photo-1.jpg">
+                </div>
+                <div>
+                    <div>
+                        <blockquote class="quote-review">
+                            <h2>John R says</h2>
+                            <h1>"Help me pick a ring for Mother's Day!"</h1>
+                        </blockquote>
+                    </div>
+                    <div class="ask images">
+                        <ul>
+                            <li>
+                                <a href="#"><img src="{{STATIC_URL}}demo/gemvara.com/gemvara.com-img/oval-ceres-ws.jpg"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="{{STATIC_URL}}demo/gemvara.com/gemvara.com-img/hercules-ws.jpg"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="{{STATIC_URL}}demo/gemvara.com/gemvara.com-img/hercules-bt.jpg"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="{{STATIC_URL}}demo/gemvara.com/gemvara.com-img/rose-thorn-bt.jpg"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <a class="ask nav button right large" href="#">&raquo;</a>
+                </div>
+            </div>
+            <section class="discussion hr-top">
+                <header>
+                    <h2>Discuss your Opinion</h2>
+                </header>
+                <ul class="clearfix">
+                    <li class="first-level clearfix">
+                        <div class="comment" data-lemonwise-content-type-id="9" data-lemonwise-object-id="5">
+                            <a href="#" class="button reply white small" data-lemonwise-bind="replyComment">Reply</a>
+                            <p>I really like the Hercules Knot, especially in that Blue Topaz!</p>
+                            <hr>
+                            <p class="author">By
+                                <strong>Jennifer W.</strong>
+                                on
+                                <strong>July 14, 2011</strong>
+                            </p>
+                        </div>
+                        <ul>
+                            <li>
+                                <div class="comment">
+                                    <p>Yeah, I do like the Knot, and my mom looks great in blue!</p>
+                                    <hr>
+                                    <p class="author">By <strong>John R.</strong> on <strong>July 14, 2011</strong></p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="clearfix reply-form" style="display:none;">
+                            <form action="/api/reviews/13/comments/" method="post">
+                                <h3>Add a comment</h3>
+                                <input name="name" type="text" maxlength="50" placeholder="Name">
+                                <textarea name="message" placeholder="Type your comment here."></textarea>
+                                <a href="#" class="button white small" data-lemonwise-bind="postComment">Post Comment</a>
+                                <input name="content_type_id" type="hidden" value="9">
+                                <input name="object_id" type="hidden" value="5">
+                                <div style='display:none'><input type='hidden' name='csrfmiddlewaretoken' value='96c0b89a310cfdca0a31c8e03f558de0' /></div>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+                <footer class="clearfix">
+                    <form action="/api/reviews/13/comments/" method="post">
+                        <h2>Add a comment</h2>
+                        <input name="name" type="text" maxlength="50" placeholder="Name">
+                        <textarea name="message" placeholder="Type your comment here."></textarea>
+                        <a href="#" class="button white small" data-lemonwise-bind="postComment">Post Comment</a>
+                        <input name="content_type_id" type="hidden" value="20">
+                        <input name="object_id" type="hidden" value="13">
+                        <div style='display:none'><input type='hidden' name='csrfmiddlewaretoken' value='96c0b89a310cfdca0a31c8e03f558de0' /></div>
+                    </form>
+                </footer>
+            </section>
+            <footer>
+                <div class="hr-top">
+                    <h2>Deciding on the perfect piece from Gemvara? Ask your friends for help using <a class="button medium">Opinion+</a></h2>
+                </div>
+            </footer>
+        </section>
+    </div>
+</section>
