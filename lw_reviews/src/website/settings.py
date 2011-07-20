@@ -165,3 +165,7 @@ LOGGING = {
 
 COMMENTS_APP = 'django.contrib.comments'
 
+try:
+    from local_settings import *
+except ImportError:
+    pass
