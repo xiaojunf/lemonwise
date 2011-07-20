@@ -30,7 +30,7 @@ class RatingWidget(BaseWidget):
         all_ratings = self.get_review_widgets()
         product_ratings = all_ratings.filter(review__product=product)
         if product_ratings:
-            return product_ratings.aggregate(Avg('value'))['value__avg']
+            return sum([int(rating.value) for rating in product_ratings])/product_ratings.count()
         else:
             return None
 
