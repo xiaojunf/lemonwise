@@ -11,7 +11,8 @@
             "user": null, 
             "content_type": 20, 
             "is_public": true, 
-            "user_name": "Travis Chase"
+            "user_name": "Travis Chase",
+            "user_email": ""
         }
     }, 
     {
@@ -27,7 +28,7 @@
             "content_type": 9, 
             "is_public": true, 
             "user_name": "David Gandy", 
-            "user_email": null
+            "user_email": ""
         }
     }, 
     {
@@ -44,41 +45,41 @@
             "content_type": 9, 
             "is_public": true, 
             "user_name": "Travis Chase", 
-            "user_email": null
+            "user_email": ""
         }
-    }, 
+    },
     {
-        "pk": 4, 
-        "model": "comments.comment", 
+        "pk": 4,
+        "model": "comments.comment",
         "fields": {
             "comment": "You bet I love the ring! Everywhere I go, people can't stop asking me about it!",
-            "submit_date": "2011-07-13 22:37:19", 
-            "ip_address": null, 
-            "object_pk": "13", 
-            "site": 1, 
-            "is_removed": false, 
-            "user": null, 
-            "content_type": 20, 
-            "is_public": true, 
-            "user_name": "Jennifer Whiteside", 
-            "user_email": null
+            "submit_date": "2011-07-13 22:37:19",
+            "ip_address": null,
+            "object_pk": "13",
+            "site": 1,
+            "is_removed": false,
+            "user": null,
+            "content_type": 20,
+            "is_public": true,
+            "user_name": "Jennifer Whiteside",
+            "user_email": ""
         }
-    }, 
+    },
     {
-        "pk": 5, 
-        "model": "comments.comment", 
+        "pk": 5,
+        "model": "comments.comment",
         "fields": {
-            "comment": "Peter's always on time for me!", 
-            "submit_date": "2011-07-15 11:42:59", 
-            "ip_address": null, 
-            "object_pk": "19", 
-            "site": 1, 
-            "is_removed": false, 
-            "user": null, 
-            "content_type": 20, 
-            "is_public": true, 
-            "user_name": "Dave Gandy", 
-            "user_email": null
+            "comment": "Peter's always on time for me!",
+            "submit_date": "2011-07-15 11:42:59",
+            "ip_address": null,
+            "object_pk": "19",
+            "site": 1,
+            "is_removed": false,
+            "user": null,
+            "content_type": 20,
+            "is_public": true,
+            "user_name": "Dave Gandy",
+            "user_email": ""
         }
     }
 ]
