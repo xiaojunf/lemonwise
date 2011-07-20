@@ -2,7 +2,7 @@
 
 import sys
 sys.path[0:0] = [
-    '/home/xiaojun/workspace/lw_reviews/lw_reviews/parts/buildout',
+    '/home/xiaojun/workspace/lemonwise/lw_reviews/parts/buildout',
     ]
 
 

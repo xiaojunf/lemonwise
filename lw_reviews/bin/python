@@ -3,7 +3,7 @@
 import sys
 
 sys.path[0:0] = [
-    '/home/xiaojun/workspace/lw_reviews/lw_reviews/src',
+    '/home/xiaojun/workspace/lemonwise/lw_reviews/src',
     ]
 
 _interactive = True

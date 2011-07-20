@@ -256,13 +256,13 @@ def addsitepackages(known_paths):
     """Add site packages, as determined by zc.buildout.
 
     See original_addsitepackages, below, for the original version."""
-    setuptools_path = '/home/xiaojun/workspace/lw_reviews/lw_reviews/eggs/distribute-0.6.15-py2.6.egg'
+    setuptools_path = '/home/xiaojun/workspace/lemonwise/lw_reviews/eggs/distribute-0.6.15-py2.6.egg'
     sys.path.append(setuptools_path)
     known_paths.add(os.path.normcase(setuptools_path))
     import pkg_resources
     buildout_paths = [
-        '/home/xiaojun/workspace/lw_reviews/lw_reviews/eggs/distribute-0.6.15-py2.6.egg',
-        '/home/xiaojun/workspace/lw_reviews/lw_reviews/eggs/zc.buildout-1.5.2-py2.6.egg'
+        '/home/xiaojun/workspace/lemonwise/lw_reviews/eggs/distribute-0.6.15-py2.6.egg',
+        '/home/xiaojun/workspace/lemonwise/lw_reviews/eggs/zc.buildout-1.5.2-py2.6.egg'
         ]
     for path in buildout_paths:
         sitedir, sitedircase = makepath(path)
