@@ -11,7 +11,7 @@ wsgi_entry_point = deploy.wsgi
 
 ; can be either nashvegas, south or none
 
-migrations = nashvegas
+migrations = none
 
 ; whether or not to run collectstatic (or build_static if collectstatic is not
 ; available)
