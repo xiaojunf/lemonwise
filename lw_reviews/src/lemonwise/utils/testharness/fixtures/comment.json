@@ -3,10 +3,8 @@
         "pk": 1, 
         "model": "comments.comment", 
         "fields": {
-            "comment": "I bought this pair because you loved them so much.", 
-            "user_url": "", 
-            "submit_date": "2011-07-07 16:51:18", 
-            "ip_address": "", 
+            "comment": "I bought this pair because you loved them so much.",
+            "submit_date": "2011-07-07 16:51:18",
             "object_pk": "1", 
             "site": 1, 
             "is_removed": false, 
@@ -21,8 +19,7 @@
         "pk": 2, 
         "model": "comments.comment", 
         "fields": {
-            "comment": "Oh yeah, how are they working out for you?", 
-            "user_url": "", 
+            "comment": "Oh yeah, how are they working out for you?",
             "submit_date": "2011-07-07 16:51:46", 
             "ip_address": "", 
             "object_pk": "1", 
@@ -39,8 +36,7 @@
         "pk": 3, 
         "model": "comments.comment", 
         "fields": {
-            "comment": "They're my favorite glasses ever!", 
-            "user_url": "", 
+            "comment": "They're my favorite glasses ever!",
             "submit_date": "2011-07-11 11:26:44", 
             "ip_address": null, 
             "object_pk": "1", 
@@ -57,8 +53,7 @@
         "pk": 4, 
         "model": "comments.comment", 
         "fields": {
-            "comment": "You bet I love the ring! Everywhere I go, people can't stop asking me about it!", 
-            "user_url": "", 
+            "comment": "You bet I love the ring! Everywhere I go, people can't stop asking me about it!",
             "submit_date": "2011-07-13 22:37:19", 
             "ip_address": null, 
             "object_pk": "13", 
@@ -76,7 +71,6 @@
         "model": "comments.comment", 
         "fields": {
             "comment": "Peter's always on time for me!", 
-            "user_url": "", 
             "submit_date": "2011-07-15 11:42:59", 
             "ip_address": null, 
             "object_pk": "19", 
