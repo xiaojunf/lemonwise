@@ -1,0 +1,194 @@
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+#lemonwise-ask {
+    width: 926px;
+    font: 11px Verdana;
+    color: #A7A9AC;
+    margin-bottom: 20px;
+}
+
+#lemonwise-ask a {
+    font-family: Verdana;
+    text-decoration: none;
+    color: #00a4e4;
+}
+
+#lemonwise-ask a:hover, a:focus {
+    text-decoration: underline;
+}
+
+#lemonwise-ask h1 {
+    font: bold 18px Georgia;
+    color: black;
+}
+
+#lemonwise-ask h2 {
+    font: bold 18px Georgia;
+    color: #4D6B7B;
+    margin: 0;
+}
+
+#lemonwise-ask h3 {
+    font: 18px Georgia;
+    text-transform: none;
+    color: #4D6B7B;
+    margin: 0;
+}
+
+#lemonwise-ask h4 {
+    font: 11px Verdana;
+    color: #4D6B7B;
+    margin: 0;
+    padding-top: 5px;
+}
+
+#lemonwise-ask hr {
+    border: 0;
+    border-top: #dbddde solid 1px;
+    margin: 0;
+    margin-top: 6px;
+    margin-bottom: 2px;
+    padding: 0;
+}
+
+#lemonwise-ask ul {
+    list-style: none; !important
+    -webkit-padding-start: 0px;
+    padding-left: 0;
+}
+
+#lemonwise-ask .button {
+    border: #dbddde solid 1px;
+    border-radius: 5px;
+    background: white;
+    padding: 2px 7px;
+}
+
+#lemonwise-ask a.button {
+    text-decoration: none;
+    color: #4D6B7B;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#lemonwise-ask a.button:hover {
+    text-decoration: none;
+    color: white;
+    background: #00a4e4;
+    border: #00a4e4 solid 1px;
+}
+
+#lemonwise-ask > div {
+    border: #dbddde solid 1px;
+    border-bottom: 0;
+    padding: 15px 20px;
+}
+
+#lemonwise-ask > div:last-child {
+    border-bottom: #dbddde solid 1px;
+}
+
+#lemonwise-ask input[type=text] {
+    height: 18px;
+    margin-bottom: 5px;
+    padding-left: 5px;
+}
+
+#lemonwise-ask textarea {
+    height: 60px;
+    margin-bottom: 5px;
+    padding-left: 5px;
+}
+
+
+
+
+
+
+
+.ask header {
+    margin-bottom: 20px;
+}
+
+a.ask.nav.button {
+    font-size: 70px;
+    font-family: Georgia !important;
+    color: #dbddde !important;
+    padding-top: 35px !important;
+    padding-bottom: 40px !important;
+}
+
+a.ask.nav.button:hover, a.ask.nav.button:focus {
+    color: white !important;
+}
+
+a.ask.nav.left {
+    margin-right: 20px;
+}
+
+a.ask.nav.right {
+    margin-left: 20px;
+}
+
+.ask img {
+    width: 150px;
+    margin: auto;
+}
+
+.ask.images > ul > li {
+    display: inline-block;
+    padding-right: 17px;
+}
+
+.ask.images > ul > li:last-child {
+    padding-right: 0px;
+}
+
+section.ask > div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#lemonwise-ask a img {
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #dbddde;
+    border: solid 2px #dbddde;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#lemonwise-ask a:hover img {
+    border-color: #00A4E4;
+    -webkit-box-shadow: 0px 0px 5px #00A4E4;
+    -moz-box-shadow: 0px 0px 5px #00A4E4;
+    -o-box-shadow: 0px 0px 5px #00A4E4;
+    box-shadow: 0px 0px 5px #00A4E4;
+}
+
+.ask footer {
+    padding-top: 20px;
+    border-top: solid 1px #dbddde;
+    margin-top: 20px;
+    text-align: right;
+    padding-bottom: 10px;
+}
+
+.ask footer h2 {
+    display: inline-block;
+}
+
+.ask footer a.button {
+    font-size: 14px;
+}

@@ -1,0 +1,133 @@
+body {
+    width: 800px;
+    border: #000000 solid 1px;
+}
+
+body > header {
+    height: 100px;
+}
+
+body > nav {
+    height: 50px;
+}
+
+body > nav > ul > li {
+    width: 15%;
+    float: left;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+body > footer {
+    height: 40px;
+}
+
+div.content {
+    width: 600px;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+section.review {
+    width: 550px;
+    font-family: Verdana;
+}
+
+section.review > header {
+    width: 150px;
+    border-top: #000000 solid 1px;
+    border-left: #000000 solid 1px;
+    border-right: #000000 solid 1px;
+}
+
+section.review > header > ul {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+section.review > header > ul > li {
+    float: left;
+    padding-left: 5px;
+}
+
+section.review > div {
+    display: none;
+    border: #000000 solid 1px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+section.review > div > div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+section.review > div > div:first-child > p {
+    display: inline-block;
+    font-size: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 250px;
+    height: 76px;
+    float: right;
+}
+
+ul.attributes {
+    border-top: #000000 solid 1px;
+    border-bottom: #000000 solid 1px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+ul.attributes > li {
+    width: 33%;
+    float: left;
+    border-right: #000000 solid 1px;
+    text-align: center;
+}
+
+ul.attributes > li:last-child {
+    border-right: none;
+}
+
+a.like {
+    display: inline-block;
+    background: url(../../../img/20px-like-unselected.png);
+    width: 20px;
+    height: 25px;
+}
+
+a.dislike {
+    display: inline-block;
+    background: url(../../../img/20px-dislike-unselected.png);
+    width: 20px;
+    height: 25px;
+}
+
+a.like.large {
+    display: inline-block;
+    background: url(../../../img/60px-like-unselected.png);
+    width: 60px;
+    height: 76px;
+    margin-right: 5px;
+}
+
+a.dislike.large {
+    display: inline-block;
+    background: url(../../../img/60px-dislike-unselected.png);
+    width: 60px;
+    height: 76px;
+    margin-right: 5px;
+}
+
+textarea.comment {
+    width: 350px;
+    height: 100px;
+}

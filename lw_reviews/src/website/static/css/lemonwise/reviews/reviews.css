@@ -1,0 +1,189 @@
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+
+section.review {
+    width: 662px;
+    font-family: Verdana;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+section.review ul {
+    list-style: none; !important
+    -webkit-padding-start: 0px;
+}
+
+section.review a {
+    text-decoration: none;
+}
+
+section.review a:hover {
+    text-decoration: underline;
+}
+
+
+section.review > header {
+    /*width: 150px;*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+section.review > header > a:first-child {
+    margin-right: 5px;
+}
+
+section.review > header > a {
+    font-family: Georgia;
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 3px;
+}
+
+section.review > div {
+    display: none;
+    border: #dbddde solid 1px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+section.review > div > div {
+    padding-top: 10px;
+}
+
+section.review > div > div:first-child > p {
+    display: inline-block;
+    font-size: 20px;
+    padding-right: 30px;
+    padding-top: 20px;
+    margin-right: 70px;
+    width: 250px;
+    height: 76px;
+    float: right;
+}
+
+section.review > div > div > ul > li > p {
+    margin-top: 5px;
+}
+
+ul.attributes {
+    border-top: #dbddde solid 1px;
+    border-bottom: #dbddde solid 1px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    -webkit-padding-start: 0px;
+}
+
+ul.attributes > li {
+    width: 24%;
+    float: left;
+    border-right: #dbddde solid 1px;
+    text-align: center;
+    height: 50px;
+}
+
+ul.attributes > li:last-child {
+    border-right: none;
+}
+
+a.like {
+    display: inline-block;
+    background: url(../../../img/20px-like-unselected.png);
+    width: 20px;
+    height: 25px;
+    vertical-align: middle;
+}
+
+a.like:hover {
+    background: url(../../../img/20px-like-selected.png);
+}
+
+a.like.selected {
+    background: url(../../../img/20px-like-selected.png);
+}
+
+a.dislike {
+    display: inline-block;
+    background: url(../../../img/20px-dislike-unselected.png);
+    width: 20px;
+    height: 25px;
+    vertical-align: middle;
+}
+
+a.dislike:hover {
+    background: url(../../../img/20px-dislike-selected.png);
+}
+
+a.dislike.selected {
+    background: url(../../../img/20px-dislike-selected.png);
+}
+
+a.like.large {
+    display: inline-block;
+    background: url(../../../img/60px-like-unselected.png);
+    width: 60px;
+    height: 76px;
+    margin-right: 5px;
+    margin-left: 100px;
+}
+
+a.like.large:hover {
+    background: url(../../../img/60px-like-selected.png);
+}
+
+a.like.large.selected {
+    background: url(../../../img/60px-like-selected.png);
+}
+
+a.dislike.large {
+    display: inline-block;
+    background: url(../../../img/60px-dislike-unselected.png);
+    width: 60px;
+    height: 76px;
+    margin-right: 5px;
+}
+
+a.dislike.large:hover {
+    background: url(../../../img/60px-dislike-selected.png);
+}
+
+a.dislike.large.selected {
+    background: url(../../../img/60px-dislike-selected.png);
+}
+
+textarea.comment {
+    width: 400px;
+    height: 70px;
+    margin-bottom: 10px;
+    font-size: 8.5pt;
+    font-family: Verdana;
+    border: #dbddde solid 1px;
+}
+
+input.review-input {
+    font-size: 8.5pt;
+    font-family: Verdana;
+    border: #dbddde solid 1px;
+}
+
+div.extra-info > div {
+    float: left;
+    padding-right: 10px;
+}
+
+div.extra-info > div:last-child {
+    float: right;
+    width: 150px;
+    padding-left: 10px;
+    padding-right: 0px;
+}
+
+div.extra-info > div:last-child > button {
+    display: block;
+}

@@ -1,0 +1,221 @@
+#facebox .b {
+  background:url(../facebox/b.png);
+}
+
+#facebox .tl {
+  background:url(../facebox/tl.png);
+}
+
+#facebox .tr {
+  background:url(../facebox/tr.png);
+}
+
+#facebox .bl {
+  background:url(../facebox/bl.png);
+}
+
+#facebox .br {
+  background:url(../facebox/br.png);
+}
+
+#facebox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  text-align: left;
+}
+
+#facebox .popup {
+  position: relative;
+}
+
+#facebox table {
+  border-collapse: collapse;
+}
+
+#facebox td {
+  border-bottom: 0;
+  padding: 0;
+}
+
+#facebox .body {
+  background: #fff;
+  width: 416px !important;
+}
+
+#facebox .loading {
+  text-align: center;
+}
+
+#facebox .image {
+  text-align: center;
+}
+
+#facebox img {
+  border: 0;
+  margin: 0;
+}
+
+#facebox .footer {
+  /*border-top: 1px solid #DDDDDD;*/
+  padding-top: 5px;
+  margin-top: 10px;
+  text-align: right;
+  width:416px !important;
+}
+
+#facebox .tl, #facebox .tr, #facebox .bl, #facebox .br {
+  height: 10px;
+  width: 10px;
+  overflow: hidden;
+  padding: 0;
+}
+
+#facebox_overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height:100%;
+  width:100%;
+}
+
+.facebox_hide {
+  z-index:-100;
+}
+
+.facebox_overlayBG {
+  background: url('bg_overlay.png') repeat;
+  z-index: 99;
+}
+
+* html #facebox_overlay { /* ie6 hack */
+  position: absolute;
+  height: expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight + 'px');
+}
+
+
+
+/**************** General modal styles */
+
+
+.asterisk {
+	color: #ff9600;
+}
+
+div#contact_container h2, div.content h2 {
+	font-weight: lighter;
+	font-size: 30px;
+	border-bottom: 2px solid #cbcbcb;
+	padding-bottom: 20px;
+}
+
+h2 span.blue {
+	color: #00b7e6;
+}
+
+a.close {
+	display: block;
+	background: url('http://www.tutorspree.com/img/close_btn.png') no-repeat;
+	width: 34px;
+	height: 34px;
+	position: absolute;
+	top: -7px;
+	right: -7px;
+	text-indent: -9999px;
+}
+
+#contact_container {
+	
+	background: url('http://www.tutorspree.com/img/stamp.png') top right no-repeat, url('http://www.tutorspree.com/img/pattern.png') #fff repeat;
+	background: url('http://www.tutorspree.com/img/stamp.png') top right no-repeat;
+	font: 14px sans-serif;
+	color: #444;
+	width: 416px;
+	padding: 20px;
+	position: relative;
+}
+
+#message_reminders {
+	color: #6f6d29;
+	background: url('http://www.tutorspree.com/img/reminder_bg.png') repeat;
+	margin-bottom: 30px;
+	padding: 10px;
+	border-bottom: 1px solid #f0eeb5;
+}
+
+#message_reminders p {
+	font-weight: bold;
+	font-size: 18px;
+	background: url('http://www.tutorspree.com/img/caution_icon.png') left center no-repeat;
+	padding-left: 32px;
+}
+
+#message_reminders ul {
+	list-style: disc;
+	margin-left: 50px;
+}
+
+#message_reminders li {
+	margin: 5px 0;
+}
+
+#form_container label, #form_container textarea, .content label, .content textarea, .content select {
+	display: block;
+}
+
+#form_container label, .content label {
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+form input, form textarea {
+	width: 394px;
+	font-size: 16px;
+	color: #777;
+	-moz-border-radius: 5px;
+	-webkit-border-radus: 5px;
+	border-radius: 5px;
+	border: 1px solid #c4c4c4;
+	padding: 10px;
+	-webkit-box-shadow: inset 0 0 4px rgba(0,0,0,.15);
+	-moz-box-shadow: inset 0 0 4px rgba(0,0,0,.15);
+	box-shadow: inset 0 0 4px rgba(0,0,0,.15);
+	margin-bottom: 10px;
+}
+
+form textarea {
+	resize: none;
+	height: 220px;
+}
+
+button[type=submit] {
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	background: #00b7e6;
+	color: #fff;
+	padding: 10px 20px;
+	font-size: 14px;
+	font-weight: bold;
+	border: none;
+	-webkit-box-shadow: 0 -1px #92e9ff, 0 1px #286d7f;
+	-moz-box-shadow: 0 -1px #92e9ff, 0 1px #286d7f;
+	box-shadow: 0 -1px #92e9ff, 0 1px #286d7f;
+	cursor: pointer;
+}
+
+button[type=submit]:hover {
+	background: #11c6f5;
+}
+
+button[type=submit] span {
+	background: url('http://www.tutorspree.com/img/mail_icon.png') no-repeat left center;
+	padding-left: 30px;
+}
+
+#disclaimer {
+	font-style: italic;
+	color: #777;
+} 
